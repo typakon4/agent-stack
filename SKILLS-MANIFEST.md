@@ -10,7 +10,7 @@ This is a curated transfer queue, not a copy of the complete local catalog. Ever
 | `learning/ai-engineering-tutor` | Preserves the Python-first learning workflow. |
 | `creative/motion-explainer-production` | Local Remotion/video production. |
 | `creative/typakon4-motion-anti-slop` | Render QA and visual-quality constraints. |
-| `research/research-knowledge-workflows` | Research intake, source provenance, and Markdown knowledge-base work. |
+| `research/research-knowledge-workflows` | **Blocked:** SkillSpector `CRITICAL / DO_NOT_INSTALL`; it contains absorbed third-party content including an anti-refusal detection. Do not transfer unchanged. |
 | `research/knowledge-combine` | Turns source collections into a curated Git-backed vault. |
 | `software-development/proof-gated-coding-delivery` | Requires real artifact and execution proof for coding work. |
 | `software-development/software-development-workflows` | General build, debugging, and test workflow. |

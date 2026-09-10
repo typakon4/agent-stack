@@ -27,8 +27,8 @@ A secret-free, Git-backed operating baseline for a new Hermes installation.
 3. Copy the baseline files into the active default profile:
    ```bash
    cp SOUL.md ~/.hermes/SOUL.md
-   mkdir -p ~/.hermes/skills/local
-   cp -a skills/personal-operator-baseline ~/.hermes/skills/local/
+   mkdir -p ~/.hermes/skills
+   cp -a skills/. ~/.hermes/skills/
    ```
    For a named profile, replace `~/.hermes` with `~/.hermes/profiles/<profile>`.
 4. Merge only the reviewed keys from `config.safe-defaults.yaml` into the target `config.yaml`; do not replace the whole file.
