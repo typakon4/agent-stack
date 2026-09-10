@@ -8,6 +8,7 @@ A secret-free, Git-backed operating baseline for a new Hermes installation.
 - `skills/personal-operator-baseline/` — reusable work rules for development, learning, creative rendering, and external actions.
 - `config.safe-defaults.yaml` — intentionally conservative defaults; it contains no provider, API, OAuth, Telegram, browser, MCP, or memory connection settings.
 - `handoffs/ACTIVE.md` — a durable project handoff template.
+- `SKILLS-MANIFEST.md` — the reviewed queue for the next skill-transfer batch.
 
 ## Intentionally excluded
 
