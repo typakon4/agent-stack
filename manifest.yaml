@@ -1,0 +1,60 @@
+# Reviewed behavior only. No entry is applied automatically.
+version: 1
+components:
+  - name: hermes-soul
+    path: SOUL.md
+    type: instruction
+    targets: [VPS_HERMES, PC_HERMES]
+    status: reviewed
+    note: Review against each profile's existing SOUL; never overwrite OMP instructions.
+  - name: personal-operator-baseline
+    path: skills/personal-operator-baseline
+    type: skill
+    targets: [VPS_HERMES, PC_HERMES]
+    status: reviewed
+    note: Hermes-specific; keep OMP's existing policies.
+  - name: ai-engineering-tutor
+    path: skills/learning/ai-engineering-tutor
+    type: skill
+    targets: [VPS_HERMES, PC_HERMES]
+    status: reviewed
+    note: Study workflow; no separate profile required by this skill.
+  - name: knowledge-combine
+    path: skills/research/knowledge-combine
+    type: skill
+    targets: [VPS_HERMES, PC_HERMES]
+    status: reviewed
+  - name: multi-host-agent-operations
+    path: skills/devops/multi-host-agent-operations
+    type: skill
+    targets: [VPS_HERMES, PC_HERMES]
+    status: hold
+    note: Contains speculative central-memory guidance and old Windows assumptions; revise before installing.
+  - name: motion-explainer-production
+    path: skills/creative/motion-explainer-production
+    type: skill
+    targets: [PC_HERMES]
+    status: optional
+    note: Use only with a local media production workflow.
+  - name: typakon4-motion-anti-slop
+    path: skills/creative/typakon4-motion-anti-slop
+    type: skill
+    targets: [PC_HERMES]
+    status: optional
+  - name: proof-gated-coding-delivery
+    path: skills/software-development/proof-gated-coding-delivery
+    type: skill
+    targets: [PC_HERMES]
+    status: optional
+    note: Not a replacement for OMP's existing coding rules.
+  - name: software-development-workflows
+    path: skills/software-development/software-development-workflows
+    type: skill
+    targets: [PC_HERMES]
+    status: optional
+  - name: mcp-integrations
+    path: skills/mcp/mcp-integrations
+    type: skill
+    targets: [PC_HERMES]
+    status: optional
+    note: Only if a local knowledge/RAG MCP use case exists.

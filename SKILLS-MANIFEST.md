@@ -1,37 +1,11 @@
-# Skill transfer manifest
+# Skill transfer decisions
 
-This is a curated transfer queue, not a copy of the complete local catalog. Every candidate must be scanned with SkillSpector and reviewed before it enters `skills/`.
+`manifest.yaml` is authoritative for install eligibility and target runtime. These decisions concern **copying behavior**, not turning on profiles or services. A SkillSpector LOW/SAFE report is a security gate, not proof that a skill is architecturally needed.
 
-## Include in the next transfer batch
+- **Reviewed for VPS + PC Hermes:** `personal-operator-baseline`, `ai-engineering-tutor` (Study), `knowledge-combine` (Research). Install only on a chosen profile after checking its existing instructions.
+- **PC Hermes only, optional:** `motion-explainer-production`, `typakon4-motion-anti-slop`, `proof-gated-coding-delivery`, `software-development-workflows`, `mcp-integrations`. Require a real local use case; do not overwrite OMP's working skills/policies.
+- **HOLD:** `multi-host-agent-operations` has a LOW/SAFE scan but assumes a central shared memory bank and old Windows Hermes paths. Review/rewrite before installation; no live-state sync.
+- **BLOCKED:** `research/research-knowledge-workflows` has `CRITICAL / DO_NOT_INSTALL` in `audits/skill-transfer/research-knowledge-workflows.json`. It is not in this repository's installable `skills/`; never transfer/enable it unchanged.
+- **VPS/profile-specific unless asked:** Caddy/dashboard, OpenWrt, Telegram signal queue, browser session automation, price alerts, cron/service-control and gateway operation skills. Existing Hermes bundled skills come from Hermes, not this repository.
 
-| Source skill | Why it belongs on the Omarchy workstation |
-|---|---|
-| `devops/multi-host-agent-operations` | Keeps laptop/VPS boundaries safe; supports the portable baseline itself. |
-| `learning/ai-engineering-tutor` | Preserves the Python-first learning workflow. |
-| `creative/motion-explainer-production` | Local Remotion/video production. |
-| `creative/typakon4-motion-anti-slop` | Render QA and visual-quality constraints. |
-| `research/research-knowledge-workflows` | **Blocked:** SkillSpector `CRITICAL / DO_NOT_INSTALL`; it contains absorbed third-party content including an anti-refusal detection. Do not transfer unchanged. |
-| `research/knowledge-combine` | Turns source collections into a curated Git-backed vault. |
-| `software-development/proof-gated-coding-delivery` | Requires real artifact and execution proof for coding work. |
-| `software-development/software-development-workflows` | General build, debugging, and test workflow. |
-| `mcp/mcp-integrations` | Needed only when connecting a local RAG/knowledge service over MCP. |
-
-## Keep host-specific unless there is a named use case
-
-- VPS dashboard/Caddy, container demos, OpenWrt, Telegram signal queue, social-account automation, browser session automation, and gateway-control skills.
-- Price monitors, cron/alerting, provider-specific integrations, and anything containing remote host assumptions.
-
-## Do not transfer as a local custom skill
-
-- Hermes built-ins and official hub skills: install/update them normally on the target machine.
-- Archived skills, curator backups, security-red-team skills, raw session exports, credentials, browser data, and environment files.
-
-## Entry gate for each candidate
-
-```bash
-~/.hermes/scripts/skillspector-scan \
-  ~/.hermes/skills/<category>/<skill> \
-  --format json --output /tmp/<skill>-skillspector.json
-```
-
-Include only a report-level `LOW / SAFE` result, or an explicitly reviewed exception. Record the source revision and scan report in `audits/` when copying.
+Existing reports under `audits/` preserve source scan evidence. Re-run a skill check and review source/provenance after modifying a skill, then update the manifest deliberately. Keep credentials, host paths, raw sessions and replay state outside Git.

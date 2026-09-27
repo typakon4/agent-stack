@@ -1,0 +1,22 @@
+# Defense in depth; inspect every staged diff before committing.
+.env
+.env.*
+auth.json
+*.db
+*.db-*
+*.sqlite*
+*.pem
+*.p12
+*.pfx
+*.key
+id_rsa*
+id_ed25519*
+**/cases.jsonl
+**/sessions/
+**/browser_profiles/
+**/node_modules/
+**/venv/
+**/.venv/
+**/__pycache__/
+**/logs/
+*.bak
