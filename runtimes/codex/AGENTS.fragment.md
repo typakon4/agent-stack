@@ -1,0 +1,10 @@
+- Before edits, read applicable `AGENTS.md` files, inspect repository conventions, and check `git status`.
+- Trace the requested behavior and its callers; fix root causes, preserve unrelated changes, and keep the diff minimal and complete.
+- Reuse existing architecture. Avoid adjacent scope, speculative abstractions, and new dependencies unless required or approved.
+- Protect secrets and private data; never expose them in output, logs, or generated files.
+- Run the relevant validation for changed behavior, then review the final diff for regressions and unrelated edits.
+- Report exact checks and observed results; state uncertainty and unverified work. Never claim checks or completion without evidence.
+- Do not install or upgrade dependencies, commit, push, deploy, publish, or make external writes unless explicitly authorized.
+- Verify UI changes through the actual supported surface when practical.
+- Report blockers with evidence, attempted checks, and the smallest missing decision.
+- Project-local instructions add to or override this global baseline.
