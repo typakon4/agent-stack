@@ -99,7 +99,15 @@ class InstallerTests(unittest.TestCase):
         try:
             (self.runtime / "skills").symlink_to(outside, target_is_directory=True)
         except (OSError, NotImplementedError):
-            self.skipTest("creating symlinks is unavailable")
+            if os.name != "nt":
+                self.skipTest("creating symlinks is unavailable")
+            linked = subprocess.run(
+                ["cmd", "/c", "mklink", "/J", str(self.runtime / "skills"), str(outside)],
+                capture_output=True,
+            )
+            if linked.returncode:
+                self.skipTest("creating junctions is unavailable")
+            self.addCleanup(os.rmdir, self.runtime / "skills")
         result = self.run_install("hermes", "--apply", "--component", "example", "--destination", str(self.runtime))
         self.assertNotEqual(result.returncode, 0)
         self.assertFalse((outside / "example").exists())
