@@ -94,6 +94,26 @@ class InstallerTests(unittest.TestCase):
         self.assertNotEqual(self.run_install("hermes", "--apply", "--component", "example", "--destination", str(self.runtime)).returncode, 0)
         self.assertFalse((self.runtime / "skills").exists())
 
+    @unittest.skipUnless(os.name == "nt", "Windows 8.3 paths only")
+    def test_short_path_repository_destination_refused(self):
+        import ctypes
+        from ctypes import wintypes
+
+        get_short_path = ctypes.WinDLL("kernel32", use_last_error=True).GetShortPathNameW
+        get_short_path.argtypes = (wintypes.LPCWSTR, wintypes.LPWSTR, wintypes.DWORD)
+        get_short_path.restype = wintypes.DWORD
+        canonical = self.repo.resolve()
+        buffer = ctypes.create_unicode_buffer(32768)
+        length = get_short_path(str(canonical), buffer, len(buffer))
+        if not length:
+            raise ctypes.WinError(ctypes.get_last_error())
+        self.assertLess(length, len(buffer))
+        if Path(buffer.value) == canonical:
+            self.skipTest("8.3 alias creation is disabled on this volume")
+        result = self.run_install("hermes", "--apply", "--component", "example", "--destination", buffer.value)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertFalse((self.repo / "skills").exists())
+
     def test_secret_content_refused_before_any_installation(self):
         signatures = (
             "sk-" + "A" * 32,

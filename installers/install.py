@@ -60,6 +60,7 @@ def destination_root(raw):
     if not root.is_absolute() or not root.is_dir() or root == root.parent:
         raise ValueError("--destination must be an absolute existing runtime home (not a filesystem root)")
     check_parts(root)
+    root = root.resolve()
     if root.is_relative_to(REPO) or REPO.is_relative_to(root):
         raise ValueError("refusing repository as destination")
     return root
