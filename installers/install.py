@@ -10,18 +10,10 @@ import tempfile
 import uuid
 from pathlib import Path, PurePosixPath
 
+from safety import forbidden_filename, suspicious_content
+
 REPO = Path(__file__).resolve().parents[1]
 RUNTIMES = ("hermes", "omp", "codex")
-FORBIDDEN = {
-    ".git", ".ssh", ".aws", ".env", ".netrc", ".npmrc", "__pycache__",
-    "auth.json", "credentials.json", "secrets.json", "tokens.json",
-    "cookies.json", "id_ed25519", "id_rsa", "sessions", "session",
-    "cache", "logs", "node_modules", "venv", ".venv", "browser_profiles", "state",
-}
-FORBIDDEN_SUFFIXES = (
-    ".db", ".db-wal", ".db-shm", ".db-journal", ".sqlite", ".sqlite3", ".sqlite-wal",
-    ".sqlite-shm", ".sqlite3-wal", ".sqlite3-shm", ".pem", ".key", ".p12", ".pfx", ".jsonl", ".pyc",
-)
 
 
 def relative_path(raw):
@@ -51,11 +43,16 @@ def check_source(path):
         for base, dirs, files in os.walk(path):
             entries.extend(Path(base) / name for name in dirs + files)
     for entry in entries:
-        name = entry.name.lower()
         if entry.is_symlink() or (hasattr(entry, "is_junction") and entry.is_junction()):
             raise ValueError(f"refusing source symlink: {entry}")
-        if name in FORBIDDEN or name.startswith((".env", "cookies.")) or name.endswith(FORBIDDEN_SUFFIXES):
+        if forbidden_filename(entry.relative_to(REPO)):
             raise ValueError(f"refusing secret/state filename: {entry}")
+        if entry.is_file():
+            signatures = suspicious_content(entry.read_bytes())
+            if signatures:
+                raise ValueError(f"refusing unsafe source ({', '.join(signatures)}): {entry}")
+        elif not entry.is_dir():
+            raise ValueError(f"refusing non-regular source: {entry}")
 
 
 def destination_root(raw):
@@ -82,7 +79,7 @@ def selected_items(runtime, names):
         yield item
 
 
-def plan(runtime, names, root):
+def plan(runtime, names, root, no_clobber=False):
     targets = set()
     for item in selected_items(runtime, names):
         source_rel = relative_path(item["source"])
@@ -94,7 +91,7 @@ def plan(runtime, names, root):
             valid = len(target_rel.parts) == 2 and target_rel.parts[0] == "skills"
         else:
             valid = len(target_rel.parts) == 2 and target_rel.parts[0] == "agent-stack"
-        if not valid or target_rel.parts[-1].startswith(".") or target_rel.parts[-1].lower() in FORBIDDEN:
+        if not valid or target_rel.parts[-1].startswith(".") or forbidden_filename(target_rel):
             raise ValueError(f"{item['name']}: refusing runtime config/state target")
         if target_rel in targets:
             raise ValueError(f"duplicate destination: {target_rel}")
@@ -105,6 +102,8 @@ def plan(runtime, names, root):
         if target:
             check_parts(target, root)
             if target.exists():
+                if no_clobber:
+                    raise ValueError(f"{item['name']}: destination already exists (--no-clobber): {target}")
                 if source.is_dir() != target.is_dir():
                     raise ValueError(f"{item['name']}: existing target has different type")
                 if target.is_dir():
@@ -147,6 +146,7 @@ def main(argv=None):
     parser.add_argument("runtime", choices=RUNTIMES)
     parser.add_argument("--component", action="append", help="Select one component; repeat for multiple")
     parser.add_argument("--destination", help="Absolute path to an existing runtime home")
+    parser.add_argument("--no-clobber", action="store_true", help="Refuse any existing selected destination")
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--apply", action="store_true", help="Install selected components")
     mode.add_argument("--dry-run", action="store_true", help="Preview only (the default)")
@@ -160,7 +160,7 @@ def main(argv=None):
             item["name"] for item in manifest["components"]
             if item["status"] == "reviewed" and args.runtime in item["targets"]
         ]
-        actions = list(plan(args.runtime, names, root))
+        actions = list(plan(args.runtime, names, root, args.no_clobber))
         for name, source, target_rel, target in actions:
             print(f"{'APPLY' if args.apply else 'DRY-RUN'} {name}: {source.relative_to(REPO)} -> {target or target_rel}")
             if args.apply:

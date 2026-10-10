@@ -1,33 +1,13 @@
 """Cheap committed-file gate, not a guarantee that every secret is detectable."""
 
 from pathlib import Path
-import re
 import subprocess
+import sys
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
-FORBIDDEN_PARTS = {"cache", "cookies", "logs", "sessions", "replay", "node_modules", "venv", ".venv", "__pycache__", "browser_profiles"}
-FORBIDDEN_NAMES = {"auth.json", "credentials.json", "state.db", "cases.jsonl", "id_rsa", "id_ed25519"}
-TOKEN_PATTERNS = {
-    "openrouter key": re.compile(rb"\bsk-or-v1-[A-Za-z0-9_-]{20,}\b"),
-    "openai key": re.compile(rb"\bsk-(?!or-v1-)[A-Za-z0-9_-]{20,}\b"),
-    "telegram bot token": re.compile(rb"\b[0-9]{7,12}:[A-Za-z0-9_-]{30,}\b"),
-    "private key": re.compile(rb"-----BEGIN (?:RSA |OPENSSH |EC |DSA )?PRIVATE KEY-----"),
-    "private machine path": re.compile(rb"(?i)(?:/home/" + rb"hermes/|C:[\\/]Users[\\/]typakon4[\\/])"),
-}
-
-
-def forbidden_filename(relative):
-    parts = [part.lower() for part in relative.parts]
-    name = parts[-1]
-    return (any(part in FORBIDDEN_PARTS for part in parts[:-1])
-            or name in FORBIDDEN_NAMES or name.startswith((".env", "id_rsa", "id_ed25519"))
-            or re.search(r"(^|[._-])cookies?([._-]|$)", name)
-            or name.endswith((".db", ".db-wal", ".db-shm", ".sqlite", ".sqlite3", ".jsonl", ".log", ".pem", ".key", ".p12", ".pfx")))
-
-
-def suspicious_content(content):
-    return [label for label, pattern in TOKEN_PATTERNS.items() if pattern.search(content)]
+sys.path.insert(0, str(ROOT / "installers"))
+from safety import forbidden_filename, suspicious_content
 
 
 class PortableSafety(unittest.TestCase):

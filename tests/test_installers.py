@@ -21,6 +21,7 @@ class InstallerTests(unittest.TestCase):
         self.repo = self.base / "portable"
         (self.repo / "installers").mkdir(parents=True)
         shutil.copy2(ENGINE, self.repo / "installers" / "install.py")
+        shutil.copy2(ENGINE.with_name("safety.py"), self.repo / "installers" / "safety.py")
         self.runtime = self.base / "runtime"
         self.runtime.mkdir()
         (self.repo / "shared" / "skills" / "example").mkdir(parents=True)
@@ -92,6 +93,40 @@ class InstallerTests(unittest.TestCase):
         self.save_manifest()
         self.assertNotEqual(self.run_install("hermes", "--apply", "--component", "example", "--destination", str(self.runtime)).returncode, 0)
         self.assertFalse((self.runtime / "skills").exists())
+
+    def test_secret_content_refused_before_any_installation(self):
+        signatures = (
+            "sk-" + "A" * 32,
+            "sk-or-v1-" + "Z" * 36,
+            "123456789:" + "a" * 35,
+            "-----BEGIN " + "OPENSSH PRIVATE KEY-----",
+        )
+        source = self.repo / "shared" / "skills" / "example" / "SKILL.md"
+        for signature in signatures:
+            with self.subTest(kind=signatures.index(signature)):
+                source.write_text(signature)
+                result = self.run_install("hermes", "--apply", "--component", "optional", "--component", "example", "--destination", str(self.runtime))
+                self.assertNotEqual(result.returncode, 0)
+                self.assertNotIn(signature, result.stderr)
+                self.assertFalse((self.runtime / "skills").exists())
+                self.assertFalse((self.runtime / "agent-stack").exists())
+
+    def test_no_clobber_preserves_existing_skill_and_entire_selection(self):
+        target = self.runtime / "skills" / "example"
+        target.mkdir(parents=True)
+        (target / "SKILL.md").write_text("user-owned skill\n")
+        result = self.run_install("hermes", "--apply", "--no-clobber", "--component", "optional", "--component", "example", "--destination", str(self.runtime))
+        self.assertNotEqual(result.returncode, 0)
+        self.assertEqual((target / "SKILL.md").read_text(), "user-owned skill\n")
+        self.assertFalse((self.runtime / "agent-stack").exists())
+        self.assertFalse((self.runtime / ".agent-stack-backups").exists())
+        preview = self.run_install("hermes", "--dry-run", "--no-clobber", "--component", "example", "--destination", str(self.runtime))
+        self.assertNotEqual(preview.returncode, 0)
+        (target / "SKILL.md").unlink()
+        target.rmdir()
+        install = self.run_install("hermes", "--apply", "--no-clobber", "--component", "example", "--destination", str(self.runtime))
+        self.assertEqual(install.returncode, 0, install.stderr)
+        self.assertEqual((target / "SKILL.md").read_text(), "new skill\n")
 
     def test_symlink_destination_refused(self):
         outside = self.base / "outside"

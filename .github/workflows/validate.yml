@@ -1,0 +1,47 @@
+name: Validate agent-stack
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.12', '3.14']
+    runs-on: ${{ matrix.os }}
+    env:
+      PY_PYTHON3: ${{ matrix.python }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Validate manifest and skills
+        run: python tests/validate_manifest.py
+      - name: Check installers, secrets, and history
+        run: python -m unittest discover -s tests -v
+      - name: Preview all runtimes on Linux
+        if: runner.os == 'Linux'
+        run: |
+          ./installers/install.sh hermes --dry-run
+          ./installers/install.sh omp --dry-run
+          ./installers/install.sh codex --dry-run
+      - name: Preview all runtimes on Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          ./installers/install.ps1 hermes --dry-run
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          ./installers/install.ps1 omp --dry-run
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          ./installers/install.ps1 codex --dry-run
+          exit $LASTEXITCODE

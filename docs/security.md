@@ -2,7 +2,7 @@
 
 This repo is reviewed portable **behavior**, not live state. Do not commit `.env` files, auth/OAuth stores, provider keys, private keys, Telegram tokens, browser cookies/profiles, chat exports, schedules, logs, DB/WAL/SHM, Jev replay/JSONL/receipts, caches, private vault contents, or machine-specific config. Ignore patterns are defense in depth, not permission to add private data. Review every proposed skill and staged diff for secrets, hardcoded personal paths, unapproved network uploads, and implicit publication.
 
-`tests/test_no_secrets.py` checks obvious file names and credential signatures in commit candidates and Git history. It cannot guarantee that all secrets have been found; human review is still required.
+`installers/safety.py` supplies the obvious filename/content checks used by both the installer and `tests/test_no_secrets.py`. The repository gate scans commit candidates and Git history; the installer scans selected sources before writing, including ordinary Markdown files. Matched credential values are never printed. These checks cannot guarantee that all secrets have been found; human review is still required.
 
 Keep credentials, model/provider settings, MCP registration, profile identity, sessions, and replay on the specific host. VPS and PC profiles are distinct; do not duplicate a production Telegram poller/token. OMP and Codex retain their own rules and MCP configs. Jev is pinned as external metadata only; a working OMP Jev MCP must not be replaced or duplicated. If a tool can publish, push, buy, send, delete, or deploy, require explicit target/action approval; the presence of credentials is not consent.
 

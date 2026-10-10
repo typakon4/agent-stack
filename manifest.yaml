@@ -8,6 +8,48 @@
   },
   "components": [
     {
+      "name": "ecc-context-budget",
+      "type": "skill",
+      "source": "shared/skills/ecc-context-budget",
+      "targets": {
+        "hermes": "skills/ecc-context-budget",
+        "omp": "skills/ecc-context-budget"
+      },
+      "runtime": "shared",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": ["omp", "hermes"],
+      "compatibility": "OMP 18.6.0 and Windows Hermes 0.21.5+5805.g54bc5e5: actual offline discovery/read and context-accounting smoke only; model adherence/hot reload untested. Disk bytes are not active context.",
+      "provenance": {
+        "repository": "https://github.com/affaan-m/ECC",
+        "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+        "source": "skills/context-budget/SKILL.md",
+        "license": "MIT",
+        "adaptation": "Portable concise rewrite; upstream notice included in the skill directory."
+      }
+    },
+    {
+      "name": "ecc-workflow-eval",
+      "type": "skill",
+      "source": "shared/skills/ecc-workflow-eval",
+      "targets": {
+        "hermes": "skills/ecc-workflow-eval",
+        "omp": "skills/ecc-workflow-eval"
+      },
+      "runtime": "shared",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": ["omp", "hermes"],
+      "compatibility": "OMP 18.6.0 and Windows Hermes 0.21.5+5805.g54bc5e5: actual offline loaders and fixed before/after dry-run smoke only; model adherence/hot reload untested. No framework/config changes.",
+      "provenance": {
+        "repository": "https://github.com/affaan-m/ECC",
+        "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+        "source": "skills/eval-harness/SKILL.md",
+        "license": "MIT",
+        "adaptation": "Portable concise rewrite; upstream notice included in the skill directory."
+      }
+    },
+    {
       "name": "verification",
       "type": "instruction",
       "source": "shared/instructions/verification.md",
