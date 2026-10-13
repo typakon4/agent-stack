@@ -1,0 +1,36 @@
+{
+  "$schema": "https://ghuc.cc/modelcontextprotocol/specification/main/schema/mcp_config_schema.json",
+  "mcpServers": {},
+  "globalShortcuts": {},
+  "commandPermissions": {
+    "approved": [
+      "python tests/validate_manifest.py",
+      "python -m unittest discover -s tests -v",
+      "git status",
+      "git diff",
+      "git log --oneline -n 10"
+    ]
+  },
+  "skills": {
+    "context-budget": {
+      "enabled": true,
+      "path": "skills/context-budget.md"
+    },
+    "workflow-eval": {
+      "enabled": true,
+      "path": "skills/workflow-eval.md"
+    },
+    "personal-operator": {
+      "enabled": true,
+      "path": "skills/personal-operator.md"
+    },
+    "proof-gated-delivery": {
+      "enabled": true,
+      "path": "skills/proof-gated-delivery.md"
+    },
+    "knowledge-combine": {
+      "enabled": true,
+      "path": "skills/knowledge-combine.md"
+    }
+  }
+}
