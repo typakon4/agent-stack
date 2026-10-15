@@ -151,581 +151,639 @@
     {
       "name": "animate",
       "type": "skill",
-      "source": "runtimes/codex/skills/animate",
+      "source": "shared/skills/animate",
       "targets": {
+        "hermes": "skills/animate",
+        "omp": "skills/animate",
         "codex": "skills/animate"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/emilkowalski/skills",
         "commit": "2d228630ba1446365f614a108cb8252f1feda202",
         "source": "animate",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "animate-expo",
       "type": "skill",
-      "source": "runtimes/codex/skills/animate-expo",
+      "source": "shared/skills/animate-expo",
       "targets": {
+        "hermes": "skills/animate-expo",
+        "omp": "skills/animate-expo",
         "codex": "skills/animate-expo"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/emilkowalski/skills",
         "commit": "2d228630ba1446365f614a108cb8252f1feda202",
         "source": "animate-expo",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "animation-performance",
       "type": "skill",
-      "source": "runtimes/codex/skills/animation-performance",
+      "source": "shared/skills/animation-performance",
       "targets": {
+        "hermes": "skills/animation-performance",
+        "omp": "skills/animation-performance",
         "codex": "skills/animation-performance"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/emilkowalski/skills",
         "commit": "2d228630ba1446365f614a108cb8252f1feda202",
         "source": "animation-performance",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "animation-vocabulary",
       "type": "skill",
-      "source": "runtimes/codex/skills/animation-vocabulary",
+      "source": "shared/skills/animation-vocabulary",
       "targets": {
+        "hermes": "skills/animation-vocabulary",
+        "omp": "skills/animation-vocabulary",
         "codex": "skills/animation-vocabulary"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/emilkowalski/skills",
         "commit": "2d228630ba1446365f614a108cb8252f1feda202",
         "source": "animation-vocabulary",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "apple-design",
       "type": "skill",
-      "source": "runtimes/codex/skills/apple-design",
+      "source": "shared/skills/apple-design",
       "targets": {
+        "hermes": "skills/apple-design",
+        "omp": "skills/apple-design",
         "codex": "skills/apple-design"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/emilkowalski/skills",
         "commit": "2d228630ba1446365f614a108cb8252f1feda202",
         "source": "apple-design",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "ask-sonner",
       "type": "skill",
-      "source": "runtimes/codex/skills/ask-sonner",
+      "source": "shared/skills/ask-sonner",
       "targets": {
+        "hermes": "skills/ask-sonner",
+        "omp": "skills/ask-sonner",
         "codex": "skills/ask-sonner"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/emilkowalski/skills",
         "commit": "2d228630ba1446365f614a108cb8252f1feda202",
         "source": "ask-sonner",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "brandkit",
       "type": "skill",
-      "source": "runtimes/codex/skills/brandkit",
+      "source": "shared/skills/brandkit",
       "targets": {
+        "hermes": "skills/brandkit",
+        "omp": "skills/brandkit",
         "codex": "skills/brandkit"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/Leonxlnx/taste-skill",
         "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
         "source": "brandkit",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "break-ui",
       "type": "skill",
-      "source": "runtimes/codex/skills/break-ui",
+      "source": "shared/skills/break-ui",
       "targets": {
+        "hermes": "skills/break-ui",
+        "omp": "skills/break-ui",
         "codex": "skills/break-ui"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/emilkowalski/skills",
         "commit": "2d228630ba1446365f614a108cb8252f1feda202",
         "source": "break-ui",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "industrial-brutalist-ui",
       "type": "skill",
-      "source": "runtimes/codex/skills/industrial-brutalist-ui",
+      "source": "shared/skills/industrial-brutalist-ui",
       "targets": {
+        "hermes": "skills/industrial-brutalist-ui",
+        "omp": "skills/industrial-brutalist-ui",
         "codex": "skills/industrial-brutalist-ui"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/Leonxlnx/taste-skill",
         "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
         "source": "brutalist-skill",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "emil-design-eng",
       "type": "skill",
-      "source": "runtimes/codex/skills/emil-design-eng",
+      "source": "shared/skills/emil-design-eng",
       "targets": {
+        "hermes": "skills/emil-design-eng",
+        "omp": "skills/emil-design-eng",
         "codex": "skills/emil-design-eng"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/emilkowalski/skills",
         "commit": "2d228630ba1446365f614a108cb8252f1feda202",
         "source": "emil-design-eng",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "find-animation-opportunities",
       "type": "skill",
-      "source": "runtimes/codex/skills/find-animation-opportunities",
+      "source": "shared/skills/find-animation-opportunities",
       "targets": {
+        "hermes": "skills/find-animation-opportunities",
+        "omp": "skills/find-animation-opportunities",
         "codex": "skills/find-animation-opportunities"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/emilkowalski/skills",
         "commit": "2d228630ba1446365f614a108cb8252f1feda202",
         "source": "find-animation-opportunities",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "gpt-taste",
       "type": "skill",
-      "source": "runtimes/codex/skills/gpt-taste",
+      "source": "shared/skills/gpt-taste",
       "targets": {
+        "hermes": "skills/gpt-taste",
+        "omp": "skills/gpt-taste",
         "codex": "skills/gpt-taste"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/Leonxlnx/taste-skill",
         "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
         "source": "gpt-tasteskill",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "image-to-code",
       "type": "skill",
-      "source": "runtimes/codex/skills/image-to-code",
+      "source": "shared/skills/image-to-code",
       "targets": {
+        "hermes": "skills/image-to-code",
+        "omp": "skills/image-to-code",
         "codex": "skills/image-to-code"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/Leonxlnx/taste-skill",
         "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
         "source": "image-to-code-skill",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "imagegen-frontend-mobile",
       "type": "skill",
-      "source": "runtimes/codex/skills/imagegen-frontend-mobile",
+      "source": "shared/skills/imagegen-frontend-mobile",
       "targets": {
+        "hermes": "skills/imagegen-frontend-mobile",
+        "omp": "skills/imagegen-frontend-mobile",
         "codex": "skills/imagegen-frontend-mobile"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/Leonxlnx/taste-skill",
         "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
         "source": "imagegen-frontend-mobile",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "imagegen-frontend-web",
       "type": "skill",
-      "source": "runtimes/codex/skills/imagegen-frontend-web",
+      "source": "shared/skills/imagegen-frontend-web",
       "targets": {
+        "hermes": "skills/imagegen-frontend-web",
+        "omp": "skills/imagegen-frontend-web",
         "codex": "skills/imagegen-frontend-web"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/Leonxlnx/taste-skill",
         "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
         "source": "imagegen-frontend-web",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "improve-animations",
       "type": "skill",
-      "source": "runtimes/codex/skills/improve-animations",
+      "source": "shared/skills/improve-animations",
       "targets": {
+        "hermes": "skills/improve-animations",
+        "omp": "skills/improve-animations",
         "codex": "skills/improve-animations"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/emilkowalski/skills",
         "commit": "2d228630ba1446365f614a108cb8252f1feda202",
         "source": "improve-animations",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "minimalist-ui",
       "type": "skill",
-      "source": "runtimes/codex/skills/minimalist-ui",
+      "source": "shared/skills/minimalist-ui",
       "targets": {
+        "hermes": "skills/minimalist-ui",
+        "omp": "skills/minimalist-ui",
         "codex": "skills/minimalist-ui"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/Leonxlnx/taste-skill",
         "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
         "source": "minimalist-skill",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "mobile-native",
       "type": "skill",
-      "source": "runtimes/codex/skills/mobile-native",
+      "source": "shared/skills/mobile-native",
       "targets": {
+        "hermes": "skills/mobile-native",
+        "omp": "skills/mobile-native",
         "codex": "skills/mobile-native"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/emilkowalski/skills",
         "commit": "2d228630ba1446365f614a108cb8252f1feda202",
         "source": "mobile-native",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "full-output-enforcement",
       "type": "skill",
-      "source": "runtimes/codex/skills/full-output-enforcement",
+      "source": "shared/skills/full-output-enforcement",
       "targets": {
+        "hermes": "skills/full-output-enforcement",
+        "omp": "skills/full-output-enforcement",
         "codex": "skills/full-output-enforcement"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/Leonxlnx/taste-skill",
         "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
         "source": "output-skill",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "pick-ui-library",
       "type": "skill",
-      "source": "runtimes/codex/skills/pick-ui-library",
+      "source": "shared/skills/pick-ui-library",
       "targets": {
+        "hermes": "skills/pick-ui-library",
+        "omp": "skills/pick-ui-library",
         "codex": "skills/pick-ui-library"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/emilkowalski/skills",
         "commit": "2d228630ba1446365f614a108cb8252f1feda202",
         "source": "pick-ui-library",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "prototype",
       "type": "skill",
-      "source": "runtimes/codex/skills/prototype",
+      "source": "shared/skills/prototype",
       "targets": {
+        "hermes": "skills/prototype",
+        "omp": "skills/prototype",
         "codex": "skills/prototype"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/emilkowalski/skills",
         "commit": "2d228630ba1446365f614a108cb8252f1feda202",
         "source": "prototype",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "redesign-existing-projects",
       "type": "skill",
-      "source": "runtimes/codex/skills/redesign-existing-projects",
+      "source": "shared/skills/redesign-existing-projects",
       "targets": {
+        "hermes": "skills/redesign-existing-projects",
+        "omp": "skills/redesign-existing-projects",
         "codex": "skills/redesign-existing-projects"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/Leonxlnx/taste-skill",
         "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
         "source": "redesign-skill",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "review-animations",
       "type": "skill",
-      "source": "runtimes/codex/skills/review-animations",
+      "source": "shared/skills/review-animations",
       "targets": {
+        "hermes": "skills/review-animations",
+        "omp": "skills/review-animations",
         "codex": "skills/review-animations"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/emilkowalski/skills",
         "commit": "2d228630ba1446365f614a108cb8252f1feda202",
         "source": "review-animations",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "high-end-visual-design",
       "type": "skill",
-      "source": "runtimes/codex/skills/high-end-visual-design",
+      "source": "shared/skills/high-end-visual-design",
       "targets": {
+        "hermes": "skills/high-end-visual-design",
+        "omp": "skills/high-end-visual-design",
         "codex": "skills/high-end-visual-design"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/Leonxlnx/taste-skill",
         "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
         "source": "soft-skill",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "stitch-design-taste",
       "type": "skill",
-      "source": "runtimes/codex/skills/stitch-design-taste",
+      "source": "shared/skills/stitch-design-taste",
       "targets": {
+        "hermes": "skills/stitch-design-taste",
+        "omp": "skills/stitch-design-taste",
         "codex": "skills/stitch-design-taste"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/Leonxlnx/taste-skill",
         "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
         "source": "stitch-skill",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "design-taste-frontend",
       "type": "skill",
-      "source": "runtimes/codex/skills/design-taste-frontend",
+      "source": "shared/skills/design-taste-frontend",
       "targets": {
+        "hermes": "skills/design-taste-frontend",
+        "omp": "skills/design-taste-frontend",
         "codex": "skills/design-taste-frontend"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/Leonxlnx/taste-skill",
         "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
         "source": "taste-skill",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "design-taste-frontend-v1",
       "type": "skill",
-      "source": "runtimes/codex/skills/design-taste-frontend-v1",
+      "source": "shared/skills/design-taste-frontend-v1",
       "targets": {
+        "hermes": "skills/design-taste-frontend-v1",
+        "omp": "skills/design-taste-frontend-v1",
         "codex": "skills/design-taste-frontend-v1"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/Leonxlnx/taste-skill",
         "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
         "source": "taste-skill-v1",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "write-swift",
       "type": "skill",
-      "source": "runtimes/codex/skills/write-swift",
+      "source": "shared/skills/write-swift",
       "targets": {
+        "hermes": "skills/write-swift",
+        "omp": "skills/write-swift",
         "codex": "skills/write-swift"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/emilkowalski/skills",
         "commit": "2d228630ba1446365f614a108cb8252f1feda202",
         "source": "write-swift",
         "license": "MIT",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
       "name": "impeccable-design",
       "type": "skill",
-      "source": "runtimes/codex/skills/impeccable-design",
+      "source": "shared/skills/impeccable-design",
       "targets": {
+        "hermes": "skills/impeccable-design",
+        "omp": "skills/impeccable-design",
         "codex": "skills/impeccable-design"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "optional",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "compatibility": "Shared static guidance for Hermes/OMP/Codex. Selected file installation is tested separately from native discovery and model adherence; tested_on remains empty. Image/browser/device/subagent capabilities must exist in the selected host. Explicit-only invocation policy remains in skill text; openai.yaml is Codex metadata.",
       "provenance": {
         "repository": "https://github.com/pbakaus/impeccable",
         "commit": "245ad82def45831dc56a21b683c7a1ff530b06cc",
         "source": "impeccable-design",
         "license": "Apache-2.0",
-        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+        "adaptation": "Reviewed Codex source adapted with host capability boundaries; original and current hashes in design/source-lock.json. Static guidance only."
       }
     },
     {
@@ -744,17 +802,19 @@
       "compatibility": "Runtime-neutral workflow text and references; offline contract tests only. Requires host-supported UI evidence. No live Jev adapter, model adherence or runtime discovery is claimed."
     },
     {
-      "name": "codex-design-routing-fragment",
+      "name": "design-routing-fragment",
       "type": "instruction",
-      "source": "runtimes/codex/DESIGN.fragment.md",
+      "source": "shared/instructions/design-routing.md",
       "targets": {
-        "codex": "agent-stack/DESIGN.fragment.md"
+        "hermes": "agent-stack/design-routing.md",
+        "omp": "agent-stack/design-routing.md",
+        "codex": "agent-stack/design-routing.md"
       },
-      "runtime": "codex",
+      "runtime": "shared",
       "status": "manual",
       "dependencies": [],
       "tested_on": [],
-      "compatibility": "Manual selection-policy merge after installing chosen skills. Never replaces AGENTS.md, registers tools, or grants installation/publication permissions."
+      "compatibility": "Manual selection-policy merge into the selected host's instructions. Preserves explicit-only invocation, supported tools and project policy. No runtime configuration is replaced."
     }
   ]
 }

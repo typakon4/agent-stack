@@ -2,7 +2,7 @@
   "schema_version": 1,
   "scanner_version": "2.12.0",
   "scan_mode": "static --no-llm",
-  "adaptation": "Codex instructions; no runtime components",
+  "adaptation": "Shared static guidance for Hermes/OMP/Codex; host capability boundaries; no runtime components",
   "sources": {
     "taste": {
       "url": "https://github.com/Leonxlnx/taste-skill",
@@ -29,9 +29,14 @@
       "files": {
         "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
         "RECIPES.md": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
-        "SKILL.md": "0b8ad9b884202437cd8d9b6cc29ee5b09eb298158a2e4bef7cca517b27c90fc5"
+        "SKILL.md": "8776a40ed016563c4903befca194960997318369092e12d02076f9a16ee23cd7"
       },
-      "path": "runtimes/codex/skills/animate"
+      "path": "shared/skills/animate",
+      "reviewed_codex_files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "RECIPES.md": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "SKILL.md": "0b8ad9b884202437cd8d9b6cc29ee5b09eb298158a2e4bef7cca517b27c90fc5"
+      }
     },
     {
       "name": "animate-expo",
@@ -44,9 +49,14 @@
       "files": {
         "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
         "RECIPES.md": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
-        "SKILL.md": "b70ea2955b4f3d4d9d65354c0516612ac8910aed847c4f5943d0ddfe486e6b78"
+        "SKILL.md": "2c5fe0e568d414798510ec254c7a3589dda36a4977097ac8766a74aa042980cc"
       },
-      "path": "runtimes/codex/skills/animate-expo"
+      "path": "shared/skills/animate-expo",
+      "reviewed_codex_files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "RECIPES.md": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+        "SKILL.md": "b70ea2955b4f3d4d9d65354c0516612ac8910aed847c4f5943d0ddfe486e6b78"
+      }
     },
     {
       "name": "animation-performance",
@@ -58,9 +68,13 @@
       "source_key": "emil",
       "files": {
         "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
-        "SKILL.md": "721db80817bc98c42f383b6af663cefd32f9cbe448e8f2b274bc21483eae6f7d"
+        "SKILL.md": "850f7ab9eb4464638121172403300238a885c7e20910bf193a9f2ca9d2b7eb42"
       },
-      "path": "runtimes/codex/skills/animation-performance"
+      "path": "shared/skills/animation-performance",
+      "reviewed_codex_files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "721db80817bc98c42f383b6af663cefd32f9cbe448e8f2b274bc21483eae6f7d"
+      }
     },
     {
       "name": "animation-vocabulary",
@@ -72,9 +86,13 @@
       "source_key": "emil",
       "files": {
         "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
-        "SKILL.md": "e8f94d0b44e4de3aa6e744c7ea7006fecb1f2202238614e0069f8eaa1a349503"
+        "SKILL.md": "17c49bfe14c76e3a8fd22a5f613bf74a409e0a9aa663c9e1588f379464c316af"
       },
-      "path": "runtimes/codex/skills/animation-vocabulary"
+      "path": "shared/skills/animation-vocabulary",
+      "reviewed_codex_files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "e8f94d0b44e4de3aa6e744c7ea7006fecb1f2202238614e0069f8eaa1a349503"
+      }
     },
     {
       "name": "apple-design",
@@ -86,9 +104,13 @@
       "source_key": "emil",
       "files": {
         "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
-        "SKILL.md": "8bb41f9194e98dc2fb0dfeec03392ed00684788b03753bf6d02de8f6114a63ca"
+        "SKILL.md": "b73e6c8ef332a519af7fd65d5295778f92a7f8ec64b225aa336fdb770cce4aee"
       },
-      "path": "runtimes/codex/skills/apple-design"
+      "path": "shared/skills/apple-design",
+      "reviewed_codex_files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "8bb41f9194e98dc2fb0dfeec03392ed00684788b03753bf6d02de8f6114a63ca"
+      }
     },
     {
       "name": "ask-sonner",
@@ -101,9 +123,14 @@
       "files": {
         "API.md": "4bb06f482c5757529e3d7a672a30fbeed42d24919a63e2571384a9ce1549aa7f",
         "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
-        "SKILL.md": "4fc6c63d07e75fceb03a474d56d8e44bcdb0ddbdd4bc7d463055447739c88cc1"
+        "SKILL.md": "93811cf811402058ecf211461837274ceab9fd6c5eb132cec300eb352533dc9d"
       },
-      "path": "runtimes/codex/skills/ask-sonner"
+      "path": "shared/skills/ask-sonner",
+      "reviewed_codex_files": {
+        "API.md": "4bb06f482c5757529e3d7a672a30fbeed42d24919a63e2571384a9ce1549aa7f",
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "4fc6c63d07e75fceb03a474d56d8e44bcdb0ddbdd4bc7d463055447739c88cc1"
+      }
     },
     {
       "name": "brandkit",
@@ -115,9 +142,13 @@
       "source_key": "taste",
       "files": {
         "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
-        "SKILL.md": "4aca4b24763b0a8e3eda87caf8d98a39158c47bbf6597f32beab1bdcddcf8eb0"
+        "SKILL.md": "acbf5f308a0aa87962c0660acc554d232e13d9c174bff2d0778b48068b7f15b4"
       },
-      "path": "runtimes/codex/skills/brandkit"
+      "path": "shared/skills/brandkit",
+      "reviewed_codex_files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "4aca4b24763b0a8e3eda87caf8d98a39158c47bbf6597f32beab1bdcddcf8eb0"
+      }
     },
     {
       "name": "break-ui",
@@ -130,9 +161,14 @@
       "files": {
         "CATALOG.md": "7358efcc6bb48e35187be1c064cf60022dcb18c72c18fab58b606dfc5f421f15",
         "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
-        "SKILL.md": "794c160d3a1b4ca3f23bc82ab029f958d10fcdd8cb4b4b688b47004fc0f4de77"
+        "SKILL.md": "8c890a189d48d7990da5078521aac4e51c553a47274ad3beea0afffef8fdfd61"
       },
-      "path": "runtimes/codex/skills/break-ui"
+      "path": "shared/skills/break-ui",
+      "reviewed_codex_files": {
+        "CATALOG.md": "7358efcc6bb48e35187be1c064cf60022dcb18c72c18fab58b606dfc5f421f15",
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "794c160d3a1b4ca3f23bc82ab029f958d10fcdd8cb4b4b688b47004fc0f4de77"
+      }
     },
     {
       "name": "industrial-brutalist-ui",
@@ -144,9 +180,13 @@
       "source_key": "taste",
       "files": {
         "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
-        "SKILL.md": "69f9ee005dddb4b50d950facbd30979c13890ea0afb273d34281294822faea3a"
+        "SKILL.md": "f96a01903d1df620cda3e45e33457b0cb6eb7b60ff475c4f64de9e33ebf6d533"
       },
-      "path": "runtimes/codex/skills/industrial-brutalist-ui"
+      "path": "shared/skills/industrial-brutalist-ui",
+      "reviewed_codex_files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "69f9ee005dddb4b50d950facbd30979c13890ea0afb273d34281294822faea3a"
+      }
     },
     {
       "name": "emil-design-eng",
@@ -158,9 +198,13 @@
       "source_key": "emil",
       "files": {
         "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
-        "SKILL.md": "092f2f67df112c353358821432ae105f696e40355a95b523cef43422c3d4bdda"
+        "SKILL.md": "71231c71defcd7357690f8956ac9b806ef45f7d0e584e21a15a8c768d410ec4e"
       },
-      "path": "runtimes/codex/skills/emil-design-eng"
+      "path": "shared/skills/emil-design-eng",
+      "reviewed_codex_files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "092f2f67df112c353358821432ae105f696e40355a95b523cef43422c3d4bdda"
+      }
     },
     {
       "name": "find-animation-opportunities",
@@ -172,9 +216,13 @@
       "source_key": "emil",
       "files": {
         "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
-        "SKILL.md": "945b80ae85904226d4953858618a72824e1b567609e3e94b8027f5dced956627"
+        "SKILL.md": "24bdb1ef40f3a3f8929d6ddaa8742fdcb1ca1dfd0bf1cd89e654725469033bc1"
       },
-      "path": "runtimes/codex/skills/find-animation-opportunities"
+      "path": "shared/skills/find-animation-opportunities",
+      "reviewed_codex_files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "945b80ae85904226d4953858618a72824e1b567609e3e94b8027f5dced956627"
+      }
     },
     {
       "name": "gpt-taste",
@@ -186,9 +234,13 @@
       "source_key": "taste",
       "files": {
         "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
-        "SKILL.md": "43647290f7fa920123a08dce84a6b996028f914e469e4cf3e602a82a0343c9fb"
+        "SKILL.md": "3732c37cca56a9545e98985186c7c0343022274b277f906a3b81284b32fa3093"
       },
-      "path": "runtimes/codex/skills/gpt-taste"
+      "path": "shared/skills/gpt-taste",
+      "reviewed_codex_files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "43647290f7fa920123a08dce84a6b996028f914e469e4cf3e602a82a0343c9fb"
+      }
     },
     {
       "name": "image-to-code",
@@ -200,9 +252,13 @@
       "source_key": "taste",
       "files": {
         "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
-        "SKILL.md": "20549ea2b119278fa7acad99d196a6dc7ba54513c4fda0fa4ac3c187a1eeb074"
+        "SKILL.md": "a364bd44938d330cfaccaf291f569540e2d215238fb9a9b3d5de223a21e32451"
       },
-      "path": "runtimes/codex/skills/image-to-code"
+      "path": "shared/skills/image-to-code",
+      "reviewed_codex_files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "20549ea2b119278fa7acad99d196a6dc7ba54513c4fda0fa4ac3c187a1eeb074"
+      }
     },
     {
       "name": "imagegen-frontend-mobile",
@@ -214,9 +270,13 @@
       "source_key": "taste",
       "files": {
         "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
-        "SKILL.md": "bff0e28e4a7bed6aaee0f7eda30aaf555355581036e50a3e3f1987f25bc210d7"
+        "SKILL.md": "ee88ff6fef7bd0f13b3338bd8acc7427d99393b0ced75cb401c815c1abcdf97d"
       },
-      "path": "runtimes/codex/skills/imagegen-frontend-mobile"
+      "path": "shared/skills/imagegen-frontend-mobile",
+      "reviewed_codex_files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "bff0e28e4a7bed6aaee0f7eda30aaf555355581036e50a3e3f1987f25bc210d7"
+      }
     },
     {
       "name": "imagegen-frontend-web",
@@ -228,9 +288,13 @@
       "source_key": "taste",
       "files": {
         "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
-        "SKILL.md": "84e30b909f971f3df13b632ce25e9f5f5f12df35e2063748063f8d4ee86c9dfd"
+        "SKILL.md": "5fbade4169904309d46d20e3a0631706d67d6566db8d5286223a1d50ed50c49b"
       },
-      "path": "runtimes/codex/skills/imagegen-frontend-web"
+      "path": "shared/skills/imagegen-frontend-web",
+      "reviewed_codex_files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "84e30b909f971f3df13b632ce25e9f5f5f12df35e2063748063f8d4ee86c9dfd"
+      }
     },
     {
       "name": "improve-animations",
@@ -244,9 +308,15 @@
         "AUDIT.md": "551c8473e20e5f4774680bc24d45e1c68e50992582720905c6b077756b7b5a55",
         "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
         "PLAN-TEMPLATE.md": "a301f4a3f98040b7966d256c4dd9924b781fc390da485a35cecb6b58923d5e3c",
-        "SKILL.md": "8c063d7c0b21de891e974bd14a5abfb6c9095a0a33ded1afc296f3b4bc763941"
+        "SKILL.md": "62dee81d31f3e987c58811d674160fe67c2a19b4ab2b504a78a590b94235d2a1"
       },
-      "path": "runtimes/codex/skills/improve-animations"
+      "path": "shared/skills/improve-animations",
+      "reviewed_codex_files": {
+        "AUDIT.md": "551c8473e20e5f4774680bc24d45e1c68e50992582720905c6b077756b7b5a55",
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "PLAN-TEMPLATE.md": "a301f4a3f98040b7966d256c4dd9924b781fc390da485a35cecb6b58923d5e3c",
+        "SKILL.md": "8c063d7c0b21de891e974bd14a5abfb6c9095a0a33ded1afc296f3b4bc763941"
+      }
     },
     {
       "name": "minimalist-ui",
@@ -258,9 +328,13 @@
       "source_key": "taste",
       "files": {
         "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
-        "SKILL.md": "79051cf004ece76f75d5ae236b18a39ff2d06c55f86e4fb12f119d4915bc8778"
+        "SKILL.md": "d072c7b9d77507876d9373e426be7ef3c86e01c70e9229cbce67b15f1d9c0bcc"
       },
-      "path": "runtimes/codex/skills/minimalist-ui"
+      "path": "shared/skills/minimalist-ui",
+      "reviewed_codex_files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "79051cf004ece76f75d5ae236b18a39ff2d06c55f86e4fb12f119d4915bc8778"
+      }
     },
     {
       "name": "mobile-native",
@@ -272,9 +346,13 @@
       "source_key": "emil",
       "files": {
         "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
-        "SKILL.md": "22e79e024c421d4259ea841db50b351bf4a34acc0572f88ad5d403d375718a64"
+        "SKILL.md": "d6cfd7b50a881d2749e15f12161ba0dbfa6d3dfd02b57dc0512e41b33e5653b1"
       },
-      "path": "runtimes/codex/skills/mobile-native"
+      "path": "shared/skills/mobile-native",
+      "reviewed_codex_files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "22e79e024c421d4259ea841db50b351bf4a34acc0572f88ad5d403d375718a64"
+      }
     },
     {
       "name": "full-output-enforcement",
@@ -286,9 +364,13 @@
       "source_key": "taste",
       "files": {
         "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
-        "SKILL.md": "106f1e08c992dcd68dd34230f48640b6a991f1024296a5f2b906e1ca582c863f"
+        "SKILL.md": "81b88b817c161c5c10768ec36e578a115a388a2379699a8e6115d86fbd3b79ee"
       },
-      "path": "runtimes/codex/skills/full-output-enforcement"
+      "path": "shared/skills/full-output-enforcement",
+      "reviewed_codex_files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "106f1e08c992dcd68dd34230f48640b6a991f1024296a5f2b906e1ca582c863f"
+      }
     },
     {
       "name": "pick-ui-library",
@@ -301,9 +383,14 @@
       "files": {
         "agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
         "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
-        "SKILL.md": "d45ee75788e299e14522e5aac27051e244495773047b7f10011f17de6c025b12"
+        "SKILL.md": "872412d226487aca6b9653b9c79004cfa555b026ba3c9116d05fbb7dbbcc7329"
       },
-      "path": "runtimes/codex/skills/pick-ui-library"
+      "path": "shared/skills/pick-ui-library",
+      "reviewed_codex_files": {
+        "agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "d45ee75788e299e14522e5aac27051e244495773047b7f10011f17de6c025b12"
+      }
     },
     {
       "name": "prototype",
@@ -317,9 +404,15 @@
         "agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
         "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
         "PICKER.md": "31a55eec94715cc79942e91e172e539e3031dcd5e2e5ee7c1446cf2caee960a6",
-        "SKILL.md": "9c72fe554989bc2e578842c2207006649ab6220d16af12e2ac74e168e39ad215"
+        "SKILL.md": "c6ce06b48b55f4b52c30e6f479e0fcf5f22b890109cf63c7f3b38dfad334ee29"
       },
-      "path": "runtimes/codex/skills/prototype"
+      "path": "shared/skills/prototype",
+      "reviewed_codex_files": {
+        "agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "PICKER.md": "31a55eec94715cc79942e91e172e539e3031dcd5e2e5ee7c1446cf2caee960a6",
+        "SKILL.md": "9c72fe554989bc2e578842c2207006649ab6220d16af12e2ac74e168e39ad215"
+      }
     },
     {
       "name": "redesign-existing-projects",
@@ -331,9 +424,13 @@
       "source_key": "taste",
       "files": {
         "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
-        "SKILL.md": "f5549f3314cd96c8ad15ad5e954ef2371c178c5199d87a4799d7eececd196fba"
+        "SKILL.md": "233727b32f77d3fe64e438984ed712450e174c669bad9de491a087b6bbb2ba8c"
       },
-      "path": "runtimes/codex/skills/redesign-existing-projects"
+      "path": "shared/skills/redesign-existing-projects",
+      "reviewed_codex_files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "f5549f3314cd96c8ad15ad5e954ef2371c178c5199d87a4799d7eececd196fba"
+      }
     },
     {
       "name": "review-animations",
@@ -346,10 +443,16 @@
       "files": {
         "agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
         "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
-        "SKILL.md": "f22a0b6aa5741ceebd33d74051d797473cdbfddfe0c7af6512bcd2b8a74ed0df",
+        "SKILL.md": "d0e01e42d5e2a8ef095292eecae2875b958c1fff1a4b064e241e7d550b925706",
         "STANDARDS.md": "ad99badb82cf520d4bddf89858012f93d7e1f0b6a5c35b04b2c9992c30cc5e6e"
       },
-      "path": "runtimes/codex/skills/review-animations"
+      "path": "shared/skills/review-animations",
+      "reviewed_codex_files": {
+        "agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "f22a0b6aa5741ceebd33d74051d797473cdbfddfe0c7af6512bcd2b8a74ed0df",
+        "STANDARDS.md": "ad99badb82cf520d4bddf89858012f93d7e1f0b6a5c35b04b2c9992c30cc5e6e"
+      }
     },
     {
       "name": "high-end-visual-design",
@@ -361,9 +464,13 @@
       "source_key": "taste",
       "files": {
         "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
-        "SKILL.md": "d70f4a9f604050d4899b6f67bfbf4231b45a50e05604636a88b490c959b0a776"
+        "SKILL.md": "48673381eead41213be1e94d960c056e1097fda5c2048ecb04ac7523898bd545"
       },
-      "path": "runtimes/codex/skills/high-end-visual-design"
+      "path": "shared/skills/high-end-visual-design",
+      "reviewed_codex_files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "d70f4a9f604050d4899b6f67bfbf4231b45a50e05604636a88b490c959b0a776"
+      }
     },
     {
       "name": "stitch-design-taste",
@@ -376,9 +483,14 @@
       "files": {
         "DESIGN.md": "0ab6740c4ebb1966dbceddb823a66d4bf027e960efbd73faca56cbf8370ae2ad",
         "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
-        "SKILL.md": "e23c6d054a57275f93b46d31c964532cc9494bcff0944acaf5585d7bb21f9073"
+        "SKILL.md": "a1c52afaeafea4da507cc95f8cd5bd0fe05bf1d45ac60e6e4182922a3b2ab1a2"
       },
-      "path": "runtimes/codex/skills/stitch-design-taste"
+      "path": "shared/skills/stitch-design-taste",
+      "reviewed_codex_files": {
+        "DESIGN.md": "0ab6740c4ebb1966dbceddb823a66d4bf027e960efbd73faca56cbf8370ae2ad",
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "e23c6d054a57275f93b46d31c964532cc9494bcff0944acaf5585d7bb21f9073"
+      }
     },
     {
       "name": "design-taste-frontend",
@@ -390,9 +502,13 @@
       "source_key": "taste",
       "files": {
         "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
-        "SKILL.md": "7913539f64d4e150b157f69319fff4a6db96472c41190023feaeaa99a64fbe8f"
+        "SKILL.md": "d7eb43b4e512f0af6c5791d6e2e904d94cc109ed0236c05983b564eab2757ad3"
       },
-      "path": "runtimes/codex/skills/design-taste-frontend"
+      "path": "shared/skills/design-taste-frontend",
+      "reviewed_codex_files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "7913539f64d4e150b157f69319fff4a6db96472c41190023feaeaa99a64fbe8f"
+      }
     },
     {
       "name": "design-taste-frontend-v1",
@@ -404,9 +520,13 @@
       "source_key": "taste",
       "files": {
         "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
-        "SKILL.md": "7f5ef6ba3ed57e7fc5ffcd4a183dda9cc992f1c66c4aef40d1be5010825e7d40"
+        "SKILL.md": "5691c58b6be6563faeb32e5418d1d8e21bb5b44c231244723e04d415b1978943"
       },
-      "path": "runtimes/codex/skills/design-taste-frontend-v1"
+      "path": "shared/skills/design-taste-frontend-v1",
+      "reviewed_codex_files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "7f5ef6ba3ed57e7fc5ffcd4a183dda9cc992f1c66c4aef40d1be5010825e7d40"
+      }
     },
     {
       "name": "write-swift",
@@ -418,9 +538,13 @@
       "source_key": "emil",
       "files": {
         "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
-        "SKILL.md": "9ab03520055ab3207845cfe0168aa869275d163c84ba19163b27d42b3f459cff"
+        "SKILL.md": "9425f0c787b5e96072033f560a8e08f3301f8b6e6b3638f7e934b5a37068b7e2"
       },
-      "path": "runtimes/codex/skills/write-swift"
+      "path": "shared/skills/write-swift",
+      "reviewed_codex_files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "9ab03520055ab3207845cfe0168aa869275d163c84ba19163b27d42b3f459cff"
+      }
     },
     {
       "name": "impeccable-design",
@@ -447,9 +571,28 @@
         "references/operate.md": "14d01ee064ebc14c2ea0929c02a6cb4ceb30eb78e83b845a829fcd2ce464e2b7",
         "references/polish.md": "ba741be1a2a6444cdce80fdaefd860e34b8f1bab4bfdee2b19f59c48ad24af53",
         "references/typeset.md": "fd6b1af9eb4cc39e5c590720014afe2430b23e134ead3446692440fa8afb53c6",
-        "SKILL.md": "761fc5450583ea7dd741797703621d1e97c7d56feb13c8552295b4ac1c8c0588"
+        "SKILL.md": "500010974ad341a218b6f5f41358a4adab1effb19becc778e8da792b56f4b9e8"
       },
-      "path": "runtimes/codex/skills/impeccable-design"
+      "path": "shared/skills/impeccable-design",
+      "reviewed_codex_files": {
+        "LICENSE": "72bdc6c2866074f26236c6313f44acb6e26dd58e605aa7aa8158f4ab7ef9b069",
+        "NOTICE.md": "1b347de5ccbdc461dce1fd4d0a8d4e517c30d0dbd3b693cec5db2e651dbd668c",
+        "references/adapt.md": "01b835b3cdc0677b5d3d349f55dae888c3c15409025079b077dd20160530bf4f",
+        "references/android.md": "7cb73f66d8f20f845cb096235deb55eafc2f796ee3d8666c69f6394db923e182",
+        "references/animate.md": "d2c12901e31bbecf891748d55ca6f6aea821bbf5c2fe75092eef0af06078f5cb",
+        "references/audit.md": "4a1b4d988b9b4457c4022ce8e166edaf257e5eabcdf3127db2b4a89741927787",
+        "references/clarify.md": "372fc91d0a0f2cc9d20b93e649512082366fda3457f0a7d90d22dced51c141b8",
+        "references/colorize.md": "8562af56c3721ff948f25d4803f5727fa02457853e9947110fc81895a4081dfd",
+        "references/craft-floor.md": "ee241e090cf853ba68b5bb040ed3a2c5a59349a28f20f44635298184ad3233e2",
+        "references/harden.md": "08468cfe30be55dcd63725c2b39bbbd839abb501cf0329fff3750ae36b7f680c",
+        "references/ios.md": "7aeb5fed8d5cc5c3732025cac93e0ae0875eec382805ac920a6c3377d555b5e8",
+        "references/layout.md": "4d471616567c3ec9df4e1cab5bf507cb2b3f72faa2aa4f2eb6db83a929cc9721",
+        "references/onboard.md": "39d169af41129dd83509e8450f491dd21264eac099fbb08f8ac4be18f18be395",
+        "references/operate.md": "14d01ee064ebc14c2ea0929c02a6cb4ceb30eb78e83b845a829fcd2ce464e2b7",
+        "references/polish.md": "ba741be1a2a6444cdce80fdaefd860e34b8f1bab4bfdee2b19f59c48ad24af53",
+        "references/typeset.md": "fd6b1af9eb4cc39e5c590720014afe2430b23e134ead3446692440fa8afb53c6",
+        "SKILL.md": "761fc5450583ea7dd741797703621d1e97c7d56feb13c8552295b4ac1c8c0588"
+      }
     }
   ],
   "reference_loop": {
@@ -467,5 +610,6 @@
     "sha256": "a134ea9b91247e6193883586b4ea03213ad250ebe9f6740825e5e01beebaedf1",
     "reported_base_commit": "4295a2f2bcde5394cc840d4ee9abe92ef1e44e5f",
     "adaptation": "Workflow relocated to shared/skills; design docs/tests updated for manifest integration. Original verification retained as historical evidence."
-  }
+  },
+  "portability_revision": 2
 }

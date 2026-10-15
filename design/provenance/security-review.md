@@ -1,5 +1,7 @@
 # Design import security review — 2026-10-15
 
+Historical scope: original Codex-only import at commit `9c6c604`. The later shared-runtime adaptation is reviewed separately in [shared-runtime-review.md](shared-runtime-review.md).
+
 ## Candidate and authority
 
 - Hermes: user-supplied `agent-stack-design-pack-local-v1.zip`, SHA-256 `a134ea9b91247e6193883586b4ea03213ad250ebe9f6740825e5e01beebaedf1`; 17 entries, archive CRC check passed. Paths were checked for traversal, absolute paths, duplicate names and symlinks before staging.

@@ -34,24 +34,28 @@ class DesignIntegration(unittest.TestCase):
             component = components[skill["name"]]
             self.assertEqual(component["status"], "optional")
             self.assertEqual(component["source"], skill["path"])
-            expected = {"codex"} if skill["name"] != "design-reference-loop" else {"hermes", "omp", "codex"}
-            self.assertEqual(set(component["targets"]), expected)
+            self.assertEqual(component["runtime"], "shared")
+            self.assertEqual(set(component["targets"]), {"hermes", "omp", "codex"})
         for runtime in ("hermes", "omp", "codex"):
             result = subprocess.run([sys.executable, str(ENGINE), runtime, "--dry-run"], capture_output=True, text=True)
             self.assertEqual(result.returncode, 0, result.stderr)
             for skill in SKILLS:
                 self.assertNotIn("DRY-RUN " + skill["name"] + ":", result.stdout)
-        for runtime in ("hermes", "omp"):
-            rejected = subprocess.run([sys.executable, str(ENGINE), runtime, "--component", "impeccable-design"], capture_output=True, text=True)
+        for runtime, name in (("omp", "personal-operator-baseline"), ("codex", "personal-operator-baseline")):
+            rejected = subprocess.run([sys.executable, str(ENGINE), runtime, "--component", name], capture_output=True, text=True)
             self.assertNotEqual(rejected.returncode, 0)
             self.assertIn("unknown or unavailable", rejected.stderr)
+        for runtime in ("hermes", "omp", "codex"):
+            manual = subprocess.run([sys.executable, str(ENGINE), runtime, "--component", "design-routing-fragment"], capture_output=True, text=True)
+            self.assertNotEqual(manual.returncode, 0)
+            self.assertIn("manual component cannot be installed", manual.stderr)
 
     def test_full_selected_install_and_preview_in_disposable_homes(self):
         with tempfile.TemporaryDirectory() as temporary:
             for runtime in ("hermes", "omp", "codex"):
                 root = Path(temporary) / runtime
                 root.mkdir()
-                selected = SKILLS if runtime == "codex" else SKILLS[-1:]
+                selected = SKILLS
                 args = [sys.executable, str(ENGINE), runtime, "--destination", str(root), "--no-clobber"]
                 for skill in selected:
                     args.extend(["--component", skill["name"]])

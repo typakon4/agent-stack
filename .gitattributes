@@ -1,3 +1,31 @@
-# Preserve the reviewed source-lock bytes across core.autocrlf and platforms.
-runtimes/codex/skills/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+# Preserve locked design-source bytes across Git newline settings.
+shared/skills/animate/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/animate-expo/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/animation-performance/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/animation-vocabulary/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/apple-design/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/ask-sonner/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/brandkit/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/break-ui/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
 shared/skills/design-reference-loop/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/design-taste-frontend/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/design-taste-frontend-v1/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/emil-design-eng/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/find-animation-opportunities/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/full-output-enforcement/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/gpt-taste/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/high-end-visual-design/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/image-to-code/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/imagegen-frontend-mobile/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/imagegen-frontend-web/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/impeccable-design/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/improve-animations/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/industrial-brutalist-ui/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/minimalist-ui/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/mobile-native/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/pick-ui-library/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/prototype/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/redesign-existing-projects/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/review-animations/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/stitch-design-taste/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+shared/skills/write-swift/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol

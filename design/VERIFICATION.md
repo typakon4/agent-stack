@@ -1,33 +1,33 @@
-# Design integration verification — 2026-10-15
+# Проверка общих дизайн-targets — 2026-10-15
 
-This report covers the integration of the supplied Hermes archive and the previously reviewed 29-skill Codex design bundle. The original author report is retained in `provenance/hermes-original-verification.md`; it is historical evidence, not a claim about this checkout.
+Текущая ревизия переносимости — 2. Предыдущий отчёт относится к коммиту 9c6c604 и сохранён в [initial-integration-verification.md](provenance/initial-integration-verification.md).
 
-## Integrated scope
+## Изменения
 
-- Shared `design-reference-loop`: original five files relocated to the existing shared-skill layout without byte changes; optional targets for Hermes, OMP and Codex.
-- 29 static Codex skills: 85 byte-identical reviewed files, original licenses and explicit-only invocation metadata. Optional Codex targets only.
-- 40 manifest components total; original nine entries and Jev pin preserved. Installer code and its source/target restrictions are unchanged.
-- Design docs, templates, synthetic fixtures and the read-only offline checker; separate manual Codex routing fragment; design tests added to the existing Linux/Windows CI matrix.
-- Exact upstream commits and file hashes in `source-lock.json`. Narrow `.gitattributes` rules preserve reviewed bytes across Git newline settings; whitespace checks for those immutable source files allow their existing upstream whitespace.
+- Все 30 дизайн-навыков находятся в `shared/skills`; targets — Hermes / OMP / Codex, статус — optional.
+- 29 ранее импортированных entrypoints получили границу возможностей host. Ресурсы, лицензии и три файла metadata сохранены без изменений. `source-lock.json` содержит исходные `reviewed_codex_files` и текущие `files` SHA-256.
+- Общий `design-routing-fragment` перенесён в `shared/instructions/design-routing.md`; статус manual, без применения установщиком. Имя прежнего компонента `codex-design-routing-fragment` заменено этим общим именем; установленный ранее файл в профиле автоматически не удаляется и не заменяется.
+- Основной README переведён на русский. Добавлена [инструкция Codex Cloud](../docs/codex-cloud.md) с текстом передачи контекста. Облачная среда не создавалась.
+- Первые девять manifest-компонентов, Jev pin и код установщика не изменены.
 
-## Observed local checks
+## Наблюдённые проверки
 
-Windows, Python **3.12.10**, 2026-10-15:
+Windows, Python 3.12.10:
 
-| Check | Observed result |
+| Проверка | Результат |
 | --- | --- |
-| `python -B tests/validate_manifest.py` | OK, 40 components |
-| `python -B -m unittest discover -s design/tests -v` | 19 tests passed: original 16 plus source hashes/static surface, optional/runtime boundaries, and full selected installs |
-| `python -B -m unittest discover -s tests -v` | 10 tests passed, no skips, outside the desktop sandbox; includes PowerShell wrapper, Windows junction, 8.3 repository containment, current-candidate and Git-history obvious-secret checks |
-| `python -B design/tools/review_candidates.py design/examples/candidates.json --decision design/examples/decision.fixture.json` | `proposal`, `selected_id: editorial`, `decision_provider: fixture`, user choice required, execution disabled, `cinematic` excluded |
-| SkillSpector 2.12.0 static scans | Codex: maximum LOW 20/100, partial coverage. Original Hermes: MEDIUM 41/100, 17/17 components inspected. No HIGH/CRITICAL; all flagged locations manually reviewed. See `provenance/security-review.md`. |
-| Native PowerShell selected preview | `installers/install.ps1 codex` with workflow, Taste, Emil and Impeccable selected: exit 0, four DRY-RUN entries, no apply |
-| Git index and diff review | All 90 locked skill-file blobs match their SHA-256 before commit; `git diff --cached --check` passed; original nine manifest entries and Jev pin unchanged |
+| `python -B tests/validate_manifest.py` | OK, 40 компонентов |
+| `python -B -m unittest discover -s design/tests -v` с writable TMP/TEMP | 19/19; все 30 навыков устанавливаются во все три одноразовых runtime homes с совпадающими SHA-256; dry-run не пишет файлы |
+| `python -B -m unittest discover -s tests -v` вне sandbox | 10/10 без пропусков, включая PowerShell wrapper, Windows junction/8.3 и текущие файлы/историю Git на очевидные секреты |
+| `skill-creator/scripts/quick_validate.py`, функция `validate_skill` для каждого навыка | 30/30; использована уже установленная PyYAML из окружения SkillSpector, новые зависимости не устанавливались |
+| Исходные хеши против lock коммита 9c6c604 | Все 85 исходных хешей сохранены; изменены ровно 29 SKILL.md, остальные 56 файлов совпадают |
+| Ссылки основного README, design README и Cloud guide | Локальные targets существуют |
+| SkillSpector 2.12.0, `scan --recursive --no-llm` | 29/29, максимум LOW 20/100; HIGH/CRITICAL отсутствуют; все срабатывания прочитаны вручную |
+| Нативный PowerShell preview для Hermes | `impeccable-design` и `design-taste-frontend`: exit 0, два DRY-RUN, без установки в профиль |
+| Git index / финальный diff | SHA-256 всех 90 locked skill-файлов совпадают; `git diff --cached --check` проходит; Git распознаёт 85 переносов |
 
-Design tests ran with TMP/TEMP redirected to a writable disposable test directory outside the repository. The initial default sandbox temp directory denied file access. With a writable temp root, the design suite passed; the baseline suite still exposed sandbox-only Python-launcher/8.3/junction limitations. The same unmodified baseline tests passed outside the sandbox. No implementation change was made to disguise those failures.
+Обычный preview не включает optional-навыки. Общий manual routing отказывается применяться во всех трёх runtime. Hermes-only operator остаётся недоступен другим runtime.
 
-Selected-install tests proved dry-run leaves the disposable homes empty, Codex receives exactly 30 chosen skill directories with matching hashes, and Hermes/OMP receive only the chosen shared workflow. Baseline previews omit all optional design skills. Codex-only design components are refused for Hermes/OMP.
+## Границы доказательств
 
-## Limits
-
-No active runtime profile or global instructions were written. File installation into disposable homes does not prove runtime discovery, hot reload, tool availability or model adherence; all new `tested_on` lists remain empty. No live Jev adapter, paid LLM call, real design quality measurement, application UI test or claimed token saving is included. Linux and Python 3.14 execution depend on the configured CI; this report records only observed checks, not future CI success.
+Проверена установка файлов; native discovery, соблюдение инструкций моделью, наличие инструментов генерации/браузера/устройства и фактическая работа в Codex Cloud не проверялись. Новые `tested_on` остаются пустыми. Статический анализ частичный: 11 полных и 18 частичных skill-анализов, заявленное покрытие 37.93%. Качество дизайна, экономия токенов и реальный Jev не измерялись. Подробности — [shared-runtime-review.md](provenance/shared-runtime-review.md).
