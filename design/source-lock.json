@@ -1,0 +1,471 @@
+{
+  "schema_version": 1,
+  "scanner_version": "2.12.0",
+  "scan_mode": "static --no-llm",
+  "adaptation": "Codex instructions; no runtime components",
+  "sources": {
+    "taste": {
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "commit": "d237dd399d57524945c0c81327da5da19f7a468d"
+    },
+    "emil": {
+      "url": "https://github.com/emilkowalski/skills",
+      "commit": "2d228630ba1446365f614a108cb8252f1feda202"
+    },
+    "impeccable": {
+      "url": "https://github.com/pbakaus/impeccable",
+      "commit": "245ad82def45831dc56a21b683c7a1ff530b06cc"
+    }
+  },
+  "skills": [
+    {
+      "name": "animate",
+      "original_folder": "animate",
+      "source": {
+        "url": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202"
+      },
+      "source_key": "emil",
+      "files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "RECIPES.md": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "SKILL.md": "0b8ad9b884202437cd8d9b6cc29ee5b09eb298158a2e4bef7cca517b27c90fc5"
+      },
+      "path": "runtimes/codex/skills/animate"
+    },
+    {
+      "name": "animate-expo",
+      "original_folder": "animate-expo",
+      "source": {
+        "url": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202"
+      },
+      "source_key": "emil",
+      "files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "RECIPES.md": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+        "SKILL.md": "b70ea2955b4f3d4d9d65354c0516612ac8910aed847c4f5943d0ddfe486e6b78"
+      },
+      "path": "runtimes/codex/skills/animate-expo"
+    },
+    {
+      "name": "animation-performance",
+      "original_folder": "animation-performance",
+      "source": {
+        "url": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202"
+      },
+      "source_key": "emil",
+      "files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "721db80817bc98c42f383b6af663cefd32f9cbe448e8f2b274bc21483eae6f7d"
+      },
+      "path": "runtimes/codex/skills/animation-performance"
+    },
+    {
+      "name": "animation-vocabulary",
+      "original_folder": "animation-vocabulary",
+      "source": {
+        "url": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202"
+      },
+      "source_key": "emil",
+      "files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "e8f94d0b44e4de3aa6e744c7ea7006fecb1f2202238614e0069f8eaa1a349503"
+      },
+      "path": "runtimes/codex/skills/animation-vocabulary"
+    },
+    {
+      "name": "apple-design",
+      "original_folder": "apple-design",
+      "source": {
+        "url": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202"
+      },
+      "source_key": "emil",
+      "files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "8bb41f9194e98dc2fb0dfeec03392ed00684788b03753bf6d02de8f6114a63ca"
+      },
+      "path": "runtimes/codex/skills/apple-design"
+    },
+    {
+      "name": "ask-sonner",
+      "original_folder": "ask-sonner",
+      "source": {
+        "url": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202"
+      },
+      "source_key": "emil",
+      "files": {
+        "API.md": "4bb06f482c5757529e3d7a672a30fbeed42d24919a63e2571384a9ce1549aa7f",
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "4fc6c63d07e75fceb03a474d56d8e44bcdb0ddbdd4bc7d463055447739c88cc1"
+      },
+      "path": "runtimes/codex/skills/ask-sonner"
+    },
+    {
+      "name": "brandkit",
+      "original_folder": "brandkit",
+      "source": {
+        "url": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d"
+      },
+      "source_key": "taste",
+      "files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "4aca4b24763b0a8e3eda87caf8d98a39158c47bbf6597f32beab1bdcddcf8eb0"
+      },
+      "path": "runtimes/codex/skills/brandkit"
+    },
+    {
+      "name": "break-ui",
+      "original_folder": "break-ui",
+      "source": {
+        "url": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202"
+      },
+      "source_key": "emil",
+      "files": {
+        "CATALOG.md": "7358efcc6bb48e35187be1c064cf60022dcb18c72c18fab58b606dfc5f421f15",
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "794c160d3a1b4ca3f23bc82ab029f958d10fcdd8cb4b4b688b47004fc0f4de77"
+      },
+      "path": "runtimes/codex/skills/break-ui"
+    },
+    {
+      "name": "industrial-brutalist-ui",
+      "original_folder": "brutalist-skill",
+      "source": {
+        "url": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d"
+      },
+      "source_key": "taste",
+      "files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "69f9ee005dddb4b50d950facbd30979c13890ea0afb273d34281294822faea3a"
+      },
+      "path": "runtimes/codex/skills/industrial-brutalist-ui"
+    },
+    {
+      "name": "emil-design-eng",
+      "original_folder": "emil-design-eng",
+      "source": {
+        "url": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202"
+      },
+      "source_key": "emil",
+      "files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "092f2f67df112c353358821432ae105f696e40355a95b523cef43422c3d4bdda"
+      },
+      "path": "runtimes/codex/skills/emil-design-eng"
+    },
+    {
+      "name": "find-animation-opportunities",
+      "original_folder": "find-animation-opportunities",
+      "source": {
+        "url": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202"
+      },
+      "source_key": "emil",
+      "files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "945b80ae85904226d4953858618a72824e1b567609e3e94b8027f5dced956627"
+      },
+      "path": "runtimes/codex/skills/find-animation-opportunities"
+    },
+    {
+      "name": "gpt-taste",
+      "original_folder": "gpt-tasteskill",
+      "source": {
+        "url": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d"
+      },
+      "source_key": "taste",
+      "files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "43647290f7fa920123a08dce84a6b996028f914e469e4cf3e602a82a0343c9fb"
+      },
+      "path": "runtimes/codex/skills/gpt-taste"
+    },
+    {
+      "name": "image-to-code",
+      "original_folder": "image-to-code-skill",
+      "source": {
+        "url": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d"
+      },
+      "source_key": "taste",
+      "files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "20549ea2b119278fa7acad99d196a6dc7ba54513c4fda0fa4ac3c187a1eeb074"
+      },
+      "path": "runtimes/codex/skills/image-to-code"
+    },
+    {
+      "name": "imagegen-frontend-mobile",
+      "original_folder": "imagegen-frontend-mobile",
+      "source": {
+        "url": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d"
+      },
+      "source_key": "taste",
+      "files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "bff0e28e4a7bed6aaee0f7eda30aaf555355581036e50a3e3f1987f25bc210d7"
+      },
+      "path": "runtimes/codex/skills/imagegen-frontend-mobile"
+    },
+    {
+      "name": "imagegen-frontend-web",
+      "original_folder": "imagegen-frontend-web",
+      "source": {
+        "url": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d"
+      },
+      "source_key": "taste",
+      "files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "84e30b909f971f3df13b632ce25e9f5f5f12df35e2063748063f8d4ee86c9dfd"
+      },
+      "path": "runtimes/codex/skills/imagegen-frontend-web"
+    },
+    {
+      "name": "improve-animations",
+      "original_folder": "improve-animations",
+      "source": {
+        "url": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202"
+      },
+      "source_key": "emil",
+      "files": {
+        "AUDIT.md": "551c8473e20e5f4774680bc24d45e1c68e50992582720905c6b077756b7b5a55",
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "PLAN-TEMPLATE.md": "a301f4a3f98040b7966d256c4dd9924b781fc390da485a35cecb6b58923d5e3c",
+        "SKILL.md": "8c063d7c0b21de891e974bd14a5abfb6c9095a0a33ded1afc296f3b4bc763941"
+      },
+      "path": "runtimes/codex/skills/improve-animations"
+    },
+    {
+      "name": "minimalist-ui",
+      "original_folder": "minimalist-skill",
+      "source": {
+        "url": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d"
+      },
+      "source_key": "taste",
+      "files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "79051cf004ece76f75d5ae236b18a39ff2d06c55f86e4fb12f119d4915bc8778"
+      },
+      "path": "runtimes/codex/skills/minimalist-ui"
+    },
+    {
+      "name": "mobile-native",
+      "original_folder": "mobile-native",
+      "source": {
+        "url": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202"
+      },
+      "source_key": "emil",
+      "files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "22e79e024c421d4259ea841db50b351bf4a34acc0572f88ad5d403d375718a64"
+      },
+      "path": "runtimes/codex/skills/mobile-native"
+    },
+    {
+      "name": "full-output-enforcement",
+      "original_folder": "output-skill",
+      "source": {
+        "url": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d"
+      },
+      "source_key": "taste",
+      "files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "106f1e08c992dcd68dd34230f48640b6a991f1024296a5f2b906e1ca582c863f"
+      },
+      "path": "runtimes/codex/skills/full-output-enforcement"
+    },
+    {
+      "name": "pick-ui-library",
+      "original_folder": "pick-ui-library",
+      "source": {
+        "url": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202"
+      },
+      "source_key": "emil",
+      "files": {
+        "agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "d45ee75788e299e14522e5aac27051e244495773047b7f10011f17de6c025b12"
+      },
+      "path": "runtimes/codex/skills/pick-ui-library"
+    },
+    {
+      "name": "prototype",
+      "original_folder": "prototype",
+      "source": {
+        "url": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202"
+      },
+      "source_key": "emil",
+      "files": {
+        "agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "PICKER.md": "31a55eec94715cc79942e91e172e539e3031dcd5e2e5ee7c1446cf2caee960a6",
+        "SKILL.md": "9c72fe554989bc2e578842c2207006649ab6220d16af12e2ac74e168e39ad215"
+      },
+      "path": "runtimes/codex/skills/prototype"
+    },
+    {
+      "name": "redesign-existing-projects",
+      "original_folder": "redesign-skill",
+      "source": {
+        "url": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d"
+      },
+      "source_key": "taste",
+      "files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "f5549f3314cd96c8ad15ad5e954ef2371c178c5199d87a4799d7eececd196fba"
+      },
+      "path": "runtimes/codex/skills/redesign-existing-projects"
+    },
+    {
+      "name": "review-animations",
+      "original_folder": "review-animations",
+      "source": {
+        "url": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202"
+      },
+      "source_key": "emil",
+      "files": {
+        "agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "f22a0b6aa5741ceebd33d74051d797473cdbfddfe0c7af6512bcd2b8a74ed0df",
+        "STANDARDS.md": "ad99badb82cf520d4bddf89858012f93d7e1f0b6a5c35b04b2c9992c30cc5e6e"
+      },
+      "path": "runtimes/codex/skills/review-animations"
+    },
+    {
+      "name": "high-end-visual-design",
+      "original_folder": "soft-skill",
+      "source": {
+        "url": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d"
+      },
+      "source_key": "taste",
+      "files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "d70f4a9f604050d4899b6f67bfbf4231b45a50e05604636a88b490c959b0a776"
+      },
+      "path": "runtimes/codex/skills/high-end-visual-design"
+    },
+    {
+      "name": "stitch-design-taste",
+      "original_folder": "stitch-skill",
+      "source": {
+        "url": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d"
+      },
+      "source_key": "taste",
+      "files": {
+        "DESIGN.md": "0ab6740c4ebb1966dbceddb823a66d4bf027e960efbd73faca56cbf8370ae2ad",
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "e23c6d054a57275f93b46d31c964532cc9494bcff0944acaf5585d7bb21f9073"
+      },
+      "path": "runtimes/codex/skills/stitch-design-taste"
+    },
+    {
+      "name": "design-taste-frontend",
+      "original_folder": "taste-skill",
+      "source": {
+        "url": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d"
+      },
+      "source_key": "taste",
+      "files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "7913539f64d4e150b157f69319fff4a6db96472c41190023feaeaa99a64fbe8f"
+      },
+      "path": "runtimes/codex/skills/design-taste-frontend"
+    },
+    {
+      "name": "design-taste-frontend-v1",
+      "original_folder": "taste-skill-v1",
+      "source": {
+        "url": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d"
+      },
+      "source_key": "taste",
+      "files": {
+        "LICENSE": "c11bfa260fc98be1cf88db5910bbdcdea80cd4fb8790791e2b1a08b3a8d48bee",
+        "SKILL.md": "7f5ef6ba3ed57e7fc5ffcd4a183dda9cc992f1c66c4aef40d1be5010825e7d40"
+      },
+      "path": "runtimes/codex/skills/design-taste-frontend-v1"
+    },
+    {
+      "name": "write-swift",
+      "original_folder": "write-swift",
+      "source": {
+        "url": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202"
+      },
+      "source_key": "emil",
+      "files": {
+        "LICENSE": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26",
+        "SKILL.md": "9ab03520055ab3207845cfe0168aa869275d163c84ba19163b27d42b3f459cff"
+      },
+      "path": "runtimes/codex/skills/write-swift"
+    },
+    {
+      "name": "impeccable-design",
+      "original_folder": "impeccable-design",
+      "source": {
+        "url": "https://github.com/pbakaus/impeccable",
+        "commit": "245ad82def45831dc56a21b683c7a1ff530b06cc"
+      },
+      "source_key": "impeccable",
+      "files": {
+        "LICENSE": "72bdc6c2866074f26236c6313f44acb6e26dd58e605aa7aa8158f4ab7ef9b069",
+        "NOTICE.md": "1b347de5ccbdc461dce1fd4d0a8d4e517c30d0dbd3b693cec5db2e651dbd668c",
+        "references/adapt.md": "01b835b3cdc0677b5d3d349f55dae888c3c15409025079b077dd20160530bf4f",
+        "references/android.md": "7cb73f66d8f20f845cb096235deb55eafc2f796ee3d8666c69f6394db923e182",
+        "references/animate.md": "d2c12901e31bbecf891748d55ca6f6aea821bbf5c2fe75092eef0af06078f5cb",
+        "references/audit.md": "4a1b4d988b9b4457c4022ce8e166edaf257e5eabcdf3127db2b4a89741927787",
+        "references/clarify.md": "372fc91d0a0f2cc9d20b93e649512082366fda3457f0a7d90d22dced51c141b8",
+        "references/colorize.md": "8562af56c3721ff948f25d4803f5727fa02457853e9947110fc81895a4081dfd",
+        "references/craft-floor.md": "ee241e090cf853ba68b5bb040ed3a2c5a59349a28f20f44635298184ad3233e2",
+        "references/harden.md": "08468cfe30be55dcd63725c2b39bbbd839abb501cf0329fff3750ae36b7f680c",
+        "references/ios.md": "7aeb5fed8d5cc5c3732025cac93e0ae0875eec382805ac920a6c3377d555b5e8",
+        "references/layout.md": "4d471616567c3ec9df4e1cab5bf507cb2b3f72faa2aa4f2eb6db83a929cc9721",
+        "references/onboard.md": "39d169af41129dd83509e8450f491dd21264eac099fbb08f8ac4be18f18be395",
+        "references/operate.md": "14d01ee064ebc14c2ea0929c02a6cb4ceb30eb78e83b845a829fcd2ce464e2b7",
+        "references/polish.md": "ba741be1a2a6444cdce80fdaefd860e34b8f1bab4bfdee2b19f59c48ad24af53",
+        "references/typeset.md": "fd6b1af9eb4cc39e5c590720014afe2430b23e134ead3446692440fa8afb53c6",
+        "SKILL.md": "761fc5450583ea7dd741797703621d1e97c7d56feb13c8552295b4ac1c8c0588"
+      },
+      "path": "runtimes/codex/skills/impeccable-design"
+    }
+  ],
+  "reference_loop": {
+    "path": "shared/skills/design-reference-loop",
+    "files": {
+      "references/jev-selection.md": "521fe60631e6a5bed498d919d78d771d33a7a9bbe895c8aff916ffc2e27d2d23",
+      "references/reference-research.md": "e86e2f177e87404740faf1911099ee3195def818ef928023713ad702389e534d",
+      "references/ui-proof.md": "cb7354b40c586355a9df5a5af0655df9994053e335ed27abc824ad4cf76b6833",
+      "references/verbalized-sampling.md": "bc2dca0bf29578052d72d2268579e5bb766fa8fe07a350c963ca5b3383e4ab29",
+      "SKILL.md": "f84b86e41f039640e654a96d3ab9c1308b29396c6826afe117f94e1e695c0e09"
+    }
+  },
+  "hermes_archive": {
+    "filename": "agent-stack-design-pack-local-v1.zip",
+    "sha256": "a134ea9b91247e6193883586b4ea03213ad250ebe9f6740825e5e01beebaedf1",
+    "reported_base_commit": "4295a2f2bcde5394cc840d4ee9abe92ef1e44e5f",
+    "adaptation": "Workflow relocated to shared/skills; design docs/tests updated for manifest integration. Original verification retained as historical evidence."
+  }
+}

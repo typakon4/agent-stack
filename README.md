@@ -67,6 +67,9 @@ More examples and rollback details: [portability](docs/portability.md).
 | `ecc-context-budget` / `ecc-workflow-eval` | Hermes / OMP | Optional selective ECC adaptations with documented offline checks |
 | `personal-operator-baseline` | Hermes only | Reviewed Hermes-specific behavior |
 | `hermes-soul-fragment` / `codex-agents-fragment` | Their respective runtime | Manual merge; preserve existing local policy |
+| `design-reference-loop` | Hermes / OMP / Codex | Optional reference → concept → user choice → working slice workflow; offline Jev contract |
+| 29 [design skills](design/README.md) | Codex only | Optional pinned Taste, Emil and static Impeccable adaptations; select individual components |
+| `codex-design-routing-fragment` | Codex only | Manual routing-policy merge; no automatic activation |
 
 The [manifest](manifest.yaml) is authoritative for status, destinations, dependencies and `tested_on`. `reviewed` does not mean every version, host, profile or UI was exercised. Do not infer support from a matching skill name. See [compatibility](docs/compatibility.md).
 
@@ -105,9 +108,10 @@ Jev remains an **external dependency**, pinned to `08473a5496864e8c97ee6f8f58980
 ```sh
 python tests/validate_manifest.py
 python -m unittest discover -s tests -v
+python -m unittest discover -s design/tests -v
 ```
 
-GitHub Actions runs the same checks on Linux and Windows with Python 3.12 and 3.14, plus native installer previews. The obvious-secret scan includes full Git history. Local installer regression tests use disposable runtime homes, not real profiles. Runtime/model adherence and the optional native ECC trial are separate from repository CI.
+GitHub Actions runs the same checks on Linux and Windows with Python 3.12 and 3.14, plus native installer previews. Design checks verify pinned file hashes, optional runtime boundaries and complete selected installs into disposable homes. The obvious-secret scan includes full Git history. Local installer regression tests use disposable runtime homes, not real profiles. Runtime/model adherence and the optional native ECC trial are separate from repository CI.
 
 ## Add a skill or runtime
 

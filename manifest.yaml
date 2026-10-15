@@ -147,6 +147,614 @@
       "dependencies": [],
       "tested_on": [],
       "compatibility": "Manual merge only; preserves existing Codex AGENTS.md and local includes."
+    },
+    {
+      "name": "animate",
+      "type": "skill",
+      "source": "runtimes/codex/skills/animate",
+      "targets": {
+        "codex": "skills/animate"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+        "source": "animate",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "animate-expo",
+      "type": "skill",
+      "source": "runtimes/codex/skills/animate-expo",
+      "targets": {
+        "codex": "skills/animate-expo"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+        "source": "animate-expo",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "animation-performance",
+      "type": "skill",
+      "source": "runtimes/codex/skills/animation-performance",
+      "targets": {
+        "codex": "skills/animation-performance"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+        "source": "animation-performance",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "animation-vocabulary",
+      "type": "skill",
+      "source": "runtimes/codex/skills/animation-vocabulary",
+      "targets": {
+        "codex": "skills/animation-vocabulary"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+        "source": "animation-vocabulary",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "apple-design",
+      "type": "skill",
+      "source": "runtimes/codex/skills/apple-design",
+      "targets": {
+        "codex": "skills/apple-design"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+        "source": "apple-design",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "ask-sonner",
+      "type": "skill",
+      "source": "runtimes/codex/skills/ask-sonner",
+      "targets": {
+        "codex": "skills/ask-sonner"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+        "source": "ask-sonner",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "brandkit",
+      "type": "skill",
+      "source": "runtimes/codex/skills/brandkit",
+      "targets": {
+        "codex": "skills/brandkit"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
+        "source": "brandkit",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "break-ui",
+      "type": "skill",
+      "source": "runtimes/codex/skills/break-ui",
+      "targets": {
+        "codex": "skills/break-ui"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+        "source": "break-ui",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "industrial-brutalist-ui",
+      "type": "skill",
+      "source": "runtimes/codex/skills/industrial-brutalist-ui",
+      "targets": {
+        "codex": "skills/industrial-brutalist-ui"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
+        "source": "brutalist-skill",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "emil-design-eng",
+      "type": "skill",
+      "source": "runtimes/codex/skills/emil-design-eng",
+      "targets": {
+        "codex": "skills/emil-design-eng"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+        "source": "emil-design-eng",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "find-animation-opportunities",
+      "type": "skill",
+      "source": "runtimes/codex/skills/find-animation-opportunities",
+      "targets": {
+        "codex": "skills/find-animation-opportunities"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+        "source": "find-animation-opportunities",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "gpt-taste",
+      "type": "skill",
+      "source": "runtimes/codex/skills/gpt-taste",
+      "targets": {
+        "codex": "skills/gpt-taste"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
+        "source": "gpt-tasteskill",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "image-to-code",
+      "type": "skill",
+      "source": "runtimes/codex/skills/image-to-code",
+      "targets": {
+        "codex": "skills/image-to-code"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
+        "source": "image-to-code-skill",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "imagegen-frontend-mobile",
+      "type": "skill",
+      "source": "runtimes/codex/skills/imagegen-frontend-mobile",
+      "targets": {
+        "codex": "skills/imagegen-frontend-mobile"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
+        "source": "imagegen-frontend-mobile",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "imagegen-frontend-web",
+      "type": "skill",
+      "source": "runtimes/codex/skills/imagegen-frontend-web",
+      "targets": {
+        "codex": "skills/imagegen-frontend-web"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
+        "source": "imagegen-frontend-web",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "improve-animations",
+      "type": "skill",
+      "source": "runtimes/codex/skills/improve-animations",
+      "targets": {
+        "codex": "skills/improve-animations"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+        "source": "improve-animations",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "minimalist-ui",
+      "type": "skill",
+      "source": "runtimes/codex/skills/minimalist-ui",
+      "targets": {
+        "codex": "skills/minimalist-ui"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
+        "source": "minimalist-skill",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "mobile-native",
+      "type": "skill",
+      "source": "runtimes/codex/skills/mobile-native",
+      "targets": {
+        "codex": "skills/mobile-native"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+        "source": "mobile-native",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "full-output-enforcement",
+      "type": "skill",
+      "source": "runtimes/codex/skills/full-output-enforcement",
+      "targets": {
+        "codex": "skills/full-output-enforcement"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
+        "source": "output-skill",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "pick-ui-library",
+      "type": "skill",
+      "source": "runtimes/codex/skills/pick-ui-library",
+      "targets": {
+        "codex": "skills/pick-ui-library"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+        "source": "pick-ui-library",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "prototype",
+      "type": "skill",
+      "source": "runtimes/codex/skills/prototype",
+      "targets": {
+        "codex": "skills/prototype"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+        "source": "prototype",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "redesign-existing-projects",
+      "type": "skill",
+      "source": "runtimes/codex/skills/redesign-existing-projects",
+      "targets": {
+        "codex": "skills/redesign-existing-projects"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
+        "source": "redesign-skill",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "review-animations",
+      "type": "skill",
+      "source": "runtimes/codex/skills/review-animations",
+      "targets": {
+        "codex": "skills/review-animations"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+        "source": "review-animations",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "high-end-visual-design",
+      "type": "skill",
+      "source": "runtimes/codex/skills/high-end-visual-design",
+      "targets": {
+        "codex": "skills/high-end-visual-design"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
+        "source": "soft-skill",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "stitch-design-taste",
+      "type": "skill",
+      "source": "runtimes/codex/skills/stitch-design-taste",
+      "targets": {
+        "codex": "skills/stitch-design-taste"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
+        "source": "stitch-skill",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "design-taste-frontend",
+      "type": "skill",
+      "source": "runtimes/codex/skills/design-taste-frontend",
+      "targets": {
+        "codex": "skills/design-taste-frontend"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
+        "source": "taste-skill",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "design-taste-frontend-v1",
+      "type": "skill",
+      "source": "runtimes/codex/skills/design-taste-frontend-v1",
+      "targets": {
+        "codex": "skills/design-taste-frontend-v1"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "d237dd399d57524945c0c81327da5da19f7a468d",
+        "source": "taste-skill-v1",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "write-swift",
+      "type": "skill",
+      "source": "runtimes/codex/skills/write-swift",
+      "targets": {
+        "codex": "skills/write-swift"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/emilkowalski/skills",
+        "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+        "source": "write-swift",
+        "license": "MIT",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "impeccable-design",
+      "type": "skill",
+      "source": "runtimes/codex/skills/impeccable-design",
+      "targets": {
+        "codex": "skills/impeccable-design"
+      },
+      "runtime": "codex",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Static Codex adaptation; install only by explicit component selection. Host tools and project policy remain authoritative. Runtime discovery and model adherence after installation are untested; no Hermes/OMP target is claimed.",
+      "provenance": {
+        "repository": "https://github.com/pbakaus/impeccable",
+        "commit": "245ad82def45831dc56a21b683c7a1ff530b06cc",
+        "source": "impeccable-design",
+        "license": "Apache-2.0",
+        "adaptation": "Reviewed local Codex bundle; exact file hashes in design/source-lock.json. Static guidance only; original runtime components excluded."
+      }
+    },
+    {
+      "name": "design-reference-loop",
+      "type": "skill",
+      "source": "shared/skills/design-reference-loop",
+      "targets": {
+        "hermes": "skills/design-reference-loop",
+        "omp": "skills/design-reference-loop",
+        "codex": "skills/design-reference-loop"
+      },
+      "runtime": "shared",
+      "status": "optional",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Runtime-neutral workflow text and references; offline contract tests only. Requires host-supported UI evidence. No live Jev adapter, model adherence or runtime discovery is claimed."
+    },
+    {
+      "name": "codex-design-routing-fragment",
+      "type": "instruction",
+      "source": "runtimes/codex/DESIGN.fragment.md",
+      "targets": {
+        "codex": "agent-stack/DESIGN.fragment.md"
+      },
+      "runtime": "codex",
+      "status": "manual",
+      "dependencies": [],
+      "tested_on": [],
+      "compatibility": "Manual selection-policy merge after installing chosen skills. Never replaces AGENTS.md, registers tools, or grants installation/publication permissions."
     }
   ]
 }

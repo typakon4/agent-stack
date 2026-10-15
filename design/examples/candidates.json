@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "request_id": "fixture-design-01",
+  "brief": {
+    "goal": "Make a small release-notes page readable without adding services.",
+    "surface": "One existing web page; no approved layout to replace.",
+    "required_checks": [
+      "within_scope",
+      "no_paid_dependencies"
+    ]
+  },
+  "candidates": [
+    {
+      "id": "editorial",
+      "summary": "Editorial page: strong headline, quiet typography, chronological notes.",
+      "macrostructure": "editorial",
+      "vs_probability": 0.08,
+      "checks": {
+        "within_scope": {
+          "status": "pass",
+          "evidence": "Synthetic fixture: one-page proposal."
+        },
+        "no_paid_dependencies": {
+          "status": "pass",
+          "evidence": "Synthetic fixture: existing HTML/CSS only."
+        }
+      }
+    },
+    {
+      "id": "release-console",
+      "summary": "Compact release console: version selector, grouped changes, restrained color.",
+      "macrostructure": "tool",
+      "vs_probability": 0.03,
+      "checks": {
+        "within_scope": {
+          "status": "pass",
+          "evidence": "Synthetic fixture: one-page proposal."
+        },
+        "no_paid_dependencies": {
+          "status": "pass",
+          "evidence": "Synthetic fixture: existing HTML/CSS only."
+        }
+      }
+    },
+    {
+      "id": "cinematic",
+      "summary": "Full-screen motion presentation requiring a paid video service.",
+      "macrostructure": "poster",
+      "vs_probability": 0.01,
+      "checks": {
+        "within_scope": {
+          "status": "pass",
+          "evidence": "Synthetic fixture: one page."
+        },
+        "no_paid_dependencies": {
+          "status": "fail",
+          "evidence": "Synthetic fixture: conflicts with the no-paid-service constraint."
+        }
+      }
+    }
+  ]
+}

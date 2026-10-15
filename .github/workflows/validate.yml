@@ -29,6 +29,8 @@ jobs:
         run: python tests/validate_manifest.py
       - name: Check installers, secrets, and history
         run: python -m unittest discover -s tests -v
+      - name: Check design contracts and selected installs
+        run: python -m unittest discover -s design/tests -v
       - name: Preview all runtimes on Linux
         if: runner.os == 'Linux'
         run: |
